@@ -20,7 +20,7 @@ export default function BearHeader() {
           <Link className="category" smooth to="/#main-screen">
             Buy
           </Link>
-          <Link className="category" smooth to="/product">
+          <Link className="category" smooth to="/#road-map">
             Roadmap
           </Link>
           <Link className="category" smooth to="/#connect">
