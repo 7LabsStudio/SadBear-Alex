@@ -1,16 +1,9 @@
 import React from 'react';
-import SadBear from './Pages/SadBear/SadBear';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-function App() {
+function App({ children }) {
 
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" component={SadBear}></Route>
-      </Switch>
-    </BrowserRouter>
+    <>{children}</>
   );
 }
 

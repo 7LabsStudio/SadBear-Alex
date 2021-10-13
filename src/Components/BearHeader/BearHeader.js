@@ -17,22 +17,22 @@ export default function BearHeader() {
       <div className="header__container">
         <img src={LogoImage} alt={"logo"} className="header__logo-image" />
         <div className="category-wrapper">
-          <Link className="category" smooth to="/SadBear/#main-screen">
+          <Link className="category" smooth to="/#main-screen">
             Buy
           </Link>
-          <Link className="category" smooth to="/SadBear/#road-map">
+          <Link className="category" smooth to="/product">
             Roadmap
           </Link>
-          <Link className="category" smooth to="/SadBear/#connect">
+          <Link className="category" smooth to="/#connect">
             Connect
           </Link>
-          <Link className="category" smooth to="/SadBear/#rarities">
+          <Link className="category" smooth to="/#rarities">
             Rarities
           </Link>
-          <Link className="category" smooth to="/SadBear/#team">
+          <Link className="category" smooth to="/#team">
             Team
           </Link>
-          <Link className="category" smooth to="/SadBear/#faq">
+          <Link className="category" smooth to="/#faq">
             FAQ
           </Link>
         </div>
@@ -53,22 +53,22 @@ export default function BearHeader() {
             onClick={() => showSidebarMenu()}
           />
           <div className="side-nav__wrap">
-            <Link className="side-category" smooth to="/SadBear/#main-screen">
+            <Link className="side-category" smooth to="/#main-screen">
               Buy
             </Link>
-            <Link className="side-category" smooth to="/SadBear/#road-map">
+            <Link className="side-category" smooth to="/#road-map">
               Roadmap
             </Link>
-            <Link className="side-category" smooth to="/SadBear/#connect">
+            <Link className="side-category" smooth to="/#connect">
               Connect
             </Link>
-            <Link className="side-category" smooth to="/SadBear/#rarities">
+            <Link className="side-category" smooth to="/#rarities">
               Rarities
             </Link>
-            <Link className="side-category" smooth to="/SadBear/#team">
+            <Link className="side-category" smooth to="/#team">
               Team
             </Link>
-            <Link className="side-category" smooth to="/SadBear/#faq">
+            <Link className="side-category" smooth to="/#faq">
               FAQ
             </Link>
           </div>
