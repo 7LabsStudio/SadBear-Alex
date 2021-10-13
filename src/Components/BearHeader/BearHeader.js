@@ -2,15 +2,11 @@ import React, { useState } from "react";
 import "./BearHeader.scss";
 import LogoImage from "../../assets/images/logo.png";
 import HamburgerIcon from "../../assets/images/hamburger.svg";
-import CloseIcon from "../../assets/images/close.svg";
 import { HashLink as Link } from 'react-router-hash-link';
+import MobileMenu from "../MobileMenu/MobileMenu"
 
 export default function BearHeader() {
-  const [showSidebar, setShowSidebar] = useState(false);
-
-  const showSidebarMenu = () => {
-    setShowSidebar(!showSidebar);
-  };
+  const [menuActive, setMenuActive] = useState(false)
 
   return (
     <header className="header">
@@ -40,40 +36,10 @@ export default function BearHeader() {
           src={HamburgerIcon}
           alt={"hamburger-icon"}
           className="hamburger"
-          onClick={() => showSidebarMenu()}
+          onClick={() => setMenuActive(!menuActive)}
         />
       </div>
-      {showSidebar && (
-        <div className="side-nav">
-          <img src={LogoImage} alt={"mobile-logo"} className="mobile-logo" />
-          <img
-            src={CloseIcon}
-            alt={"close"}
-            className="close"
-            onClick={() => showSidebarMenu()}
-          />
-          <div className="side-nav__wrap">
-            <Link className="side-category" smooth to="/#main-screen">
-              Buy
-            </Link>
-            <Link className="side-category" smooth to="/#road-map">
-              Roadmap
-            </Link>
-            <Link className="side-category" smooth to="/#connect">
-              Connect
-            </Link>
-            <Link className="side-category" smooth to="/#rarities">
-              Rarities
-            </Link>
-            <Link className="side-category" smooth to="/#team">
-              Team
-            </Link>
-            <Link className="side-category" smooth to="/#faq">
-              FAQ
-            </Link>
-          </div>
-        </div>
-      )}
+      <MobileMenu menuActive={menuActive} closeMenu={setMenuActive} />
     </header>
   );
 }
