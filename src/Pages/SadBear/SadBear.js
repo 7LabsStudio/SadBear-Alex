@@ -29,11 +29,12 @@ export default function SadBear() {
             <p className="main-screen__description">Shorting Solana since $3.</p>
             <p className="main-screen__content">
               It all started with a group of investment bears who found success
-              in 2020 hoarding and selling toilet paper during the start of the
-              pandemic. The group is also famous for shorting tiger petting zoos
-              during the Tiger King hype. Then they decided to short some
-              crypto, SOL specifically. Didn't go well ... They became the{" "}
-              <b className="main-screen__sad-bears">Sad Bears</b>.<br />
+              in 2020 hoarding and selling toilet paper during the start of the pandemic.
+              The group is also famous for shorting tiger petting zoos during the Tiger King hype.
+              Then they decided to short some crypto, SOL specifically. Didn't go well...
+              <br></br>
+              They became the
+              <b className="main-screen__sad-bears"> Sad Bears</b>.<br />
               <br />
               If you've ever gotten rekt by a trade or fallen victim to a crypto scam, you might be a Sad Bear too. Join this community of Sad Bears to give moral support to each other and commiserate in our failures. Oh and also get some sweet rewards.
               <br></br><br></br>
@@ -160,9 +161,7 @@ export default function SadBear() {
               <p className="team__member-name">Jefe Bear</p>
               <p className="team__member-role">CEO</p>
               <p className="team__member-description">
-                Took a &nbsp;long position on commercial real estate in 2020.
-                Not sure what went wrong. Somehow got promoted to boss bear and
-                is in charge of &nbsp;leading all things Sad Bears related.
+                Took a long position on commercial real estate in 2020. Not sure what went wrong. Somehow got promoted to boss bear and is in charge of leading all things Sad Bears related.
               </p>
             </div>
           </div>
@@ -172,10 +171,7 @@ export default function SadBear() {
               <p className="team__member-name">Picasso Bear</p>
               <p className="team__member-role">Art</p>
               <p className="team__member-description">
-                Spent early cub years in his parent's cave painting on the
-                walls. Just found out this year that you're not supposed to
-                sniff the paint ... has not stopped. Explains a &nbsp;lot about
-                the art in the Sad Bears collection.
+                Spent early cub years in his parent's cave painting on the walls. Just found out this year that you're not supposed to sniff the paint..has not stopped... Explains a lot about the art in the Sad Bears collection....
               </p>
             </div>
           </div>
@@ -185,14 +181,11 @@ export default function SadBear() {
               <p className="team__member-name">Blue Bear</p>
               <p className="team__member-role">CTO</p>
               <p className="team__member-description">
-                Heard about the chip shortage and started hoarding chips. No one
-                is buying Lays Sour Cream & Onion, not sure if he got the wrong
-                kind. Luckily he won't run out of snacks while he develops the
-                tech for Sad Bears.
+                Heard about the chip shortage and started hoarding chips. No one is buying Lays Sour Cream & Onion, not sure if he got the wrong kind. Luckily he won't run out of snacks while he develops the tech for Sad Bears.
               </p>
             </div>
           </div>
-          <div className="team__member">
+          {/* <div className="team__member">
             <img src={Kosher} alt={"kosher-bear"} className="team__member-avatar" />
             <div className="team__member-wrapper">
               <p className="team__member-name">Kosher Bear</p>
@@ -204,17 +197,14 @@ export default function SadBear() {
                 management.
               </p>
             </div>
-          </div>
+          </div> */}
           <div className="team__member">
             <img src={Nugget} alt={"nugget-bear"} className="team__member-avatar" />
             <div className="team__member-wrapper">
               <p className="team__member-name">Nugget Bear</p>
               <p className="team__member-role">Marketing</p>
               <p className="team__member-description">
-                Owned a business selling farm-raised salmon &nbsp;labeled as
-                wild caught. Got arrested at the US/Mexico border trying to flee
-                the country. Turning over a new &nbsp;leaf in marketing and
-                community management.
+                Owned a business selling farm-raised salmon labeled as wild caught. Got arrested at the US/Mexico border trying to flee the country. Turning over a new leaf in marketing and community management.
               </p>
             </div>
           </div>
@@ -228,8 +218,7 @@ export default function SadBear() {
           <p className="faq__question">Q: What are Sad Bears? </p>
           <div className="faq__answer-content">
             <p className="faq__answer">
-              A: Sad Bears are a collection of 10,000 algorithmically generated
-              Bears that exist on the Solana blockchain.{" "}
+              A: Sad Bears are a collection of 10,000 algorithmically generated Bears that exist on the Solana blockchain.
             </p>
           </div>
           <p className="faq__question">Q: How can I buy a Sad Bear? </p>
