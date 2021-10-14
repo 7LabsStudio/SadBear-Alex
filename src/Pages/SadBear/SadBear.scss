@@ -42,7 +42,7 @@
 
 .main-screen {
 	padding-top: 20rem;
-	padding-bottom: 11rem;
+	padding-bottom: 8rem;
 	position: relative;
 
 	@media screen and (max-width: $large_tablet) {
@@ -53,13 +53,12 @@
 		padding-left: 16.7rem;
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-end;
+		align-items: flex-start;
 
 		@media screen and (max-width: $large_tablet) {
 			padding-left: 0;
 			flex-direction: column;
 			justify-content: flex-start;
-			align-items: flex-start;
 		}
 	}
 
@@ -144,13 +143,14 @@
 		max-height: 69rem;
 		height: 69rem;
 		background-image: url('../../assets/images/bear-gif.gif');
-		background-position: bottom center;
 		background-repeat: no-repeat;
 		background-size: contain;
+		margin-top: -12rem;
 
 		@media screen and (max-width: $large_tablet) {
+			background-position-x: center;
 			height: 33rem;
-			max-width: 100%;
+			margin-top: 0;
 		}
 	}
 }
@@ -158,14 +158,121 @@
 .road-map {
 	&__wrap {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 		position: relative;
-		padding: 12.4rem 4rem 5.3rem 16.8rem;
+		padding: 17rem 18rem 5.3rem 16.8rem;
 
 		@media screen and (max-width: $large_tablet) {
-			padding: 3rem 2rem 2rem;
+			padding: 3rem 2rem 5rem;
 			flex-direction: column;
 			justify-content: flex-start;
+		}
+	}
+
+	&__list {
+		max-width: 84.5rem;
+		width: 100%;
+	}
+
+	&__item {
+		text-align: left;
+		position: relative;
+		z-index: 1;
+		padding-left: 12.5rem;
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		margin-bottom: 0.8rem;
+		text-align: justify;
+
+		@media screen and (max-width: $large_tablet) {
+			padding-left: 0rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+
+		h3 {
+			font-family: 'Hiruko';
+			font-weight: 400;
+			letter-spacing: -1.3px;
+			font-size: 4.8rem;
+			line-height: 4.8rem;
+			margin-bottom: 4rem;
+
+			@media screen and (max-width: $large_tablet) {
+				font-size: 3.6rem;
+				line-height: 3.6rem;
+				margin-bottom: 2rem;
+			}
+		}
+
+		p {
+			font-size: 3.6rem;
+			line-height: 4rem;
+
+			@media screen and (max-width: $large_tablet) {
+				font-size: 1.8rem;
+				line-height: 2.6rem;
+			}
+		}
+
+		&:first-of-type {
+			padding-top: 0rem;
+			padding-bottom: 8rem;
+
+			@media screen and (max-width: $large_tablet) {
+				padding-top: 0.4rem;
+				padding-bottom: 3rem;
+			}
+		}
+
+		&:last-of-type {
+			padding-bottom: 0;
+			margin-bottom: 0;
+
+			&::after {
+				background-image: url('../../assets/images/road_arrow.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-color: transparent;
+				background-position: top center;
+				width: 2.55rem;
+				min-height: 40rem;
+				left: calc((3.6rem - 2.55rem) / 2);
+
+				@media screen and (max-width: $large_tablet) {
+					min-height: 30rem;
+				}
+			}
+		}
+
+		&::after,
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: 1;
+
+			@media screen and (max-width: $large_tablet) {
+				display: none;
+			}
+		}
+
+		&::before {
+			width: 3.2rem;
+			height: 3.2rem;
+			border-radius: 50%;
+			left: 0;
+			top: 0;
+			border: 0.2rem solid #00ffff;
+		}
+
+		&::after {
+			width: 0.2rem;
+			top: 4.4rem;
+			left: calc((3.6rem - 0.2rem) / 2);
+			background: #ffffff;
+			height: calc(100% - 4.4rem);
 		}
 	}
 
@@ -202,13 +309,11 @@
 			font-size: 3.6rem;
 			max-width: 40rem;
 			line-height: 5rem;
-			margin: 0 auto;
+			margin: 0 auto 1rem;
 		}
 	}
 
 	&__text {
-		width: 70%;
-		max-width: 77.4rem;
 		text-align: center;
 		position: relative;
 		z-index: 9;
@@ -223,9 +328,11 @@
 		font-family: 'Hiruko';
 		font-size: 4.6rem;
 		margin-bottom: 4.1rem;
+		padding-left: 12.5rem;
 
 		@media screen and (max-width: $large_tablet) {
-			margin-bottom: 1rem;
+			margin-bottom: 4rem;
+			padding-left: 0;
 		}
 	}
 
@@ -334,7 +441,7 @@
 	}
 
 	&__arrow {
-		height: 22rem;
+		height: 20.7rem;
 		position: absolute;
 		top: calc(100% - 5rem);
 		right: 35.5rem;

@@ -1,8 +1,9 @@
 import React from "react";
 import "./SadBear.scss";
 import BearHeader from "../../Components/BearHeader/BearHeader";
-import LongArrow from "../../assets/images/long-arrow.svg";
-// import ShortArrow from "../../assets/images/short-arrow.svg";
+import RaritiesArrow from "../../assets/images/rariries-arrow.svg";
+import ConnectArrow from "../../assets/images/connect-arrow.svg";
+import TeamArrow from "../../assets/images/team-arrow.svg";
 import ConnectBear from "../../assets/images/bear7.png";
 import Twitter from "../../assets/images/twitter.svg";
 import Discord from "../../assets/images/discord.svg";
@@ -34,13 +35,12 @@ export default function SadBear() {
               crypto, SOL specifically. Didn't go well ... They became the{" "}
               <b className="main-screen__sad-bears">Sad Bears</b>.<br />
               <br />
-              Join this community of Sad Bears to give moral support to other
-              Sad Bears and eat our feelings together.
+              If you've ever gotten rekt by a trade or fallen victim to a crypto scam, you might be a Sad Bear too. Join this community of Sad Bears to give moral support to each other and commiserate in our failures. Oh and also get some sweet rewards.
+              <br></br><br></br>
+              After all 10,000 Sad Bears are sold, one month of exclusive airdrops will begin. Every day for a month, Sad Bears NFT holders will have the chance to receive exclusive airdrops including rare Sad Bears, surprise NFTs, $SOL, and more! Every Sad Bear you hold in your wallet increases your chance of winning an item.
             </p>
             {/* <button className="connect-button">CONNECT WALLET TO BUY</button>
             <p className="counter-placeholder">0/10000 SOLD</p> */}
-
-
           </div>
           <div className="main-screen__image"></div>
         </div>
@@ -49,10 +49,10 @@ export default function SadBear() {
       <section className="road-map">
         <div id="road-map" className="road-map__wrap">
           <p className="road-map__left-text">Minting iN late November</p>
-          <img src={LongArrow} alt={"long-arrow"} className="road-map__left-arrow" />
+          {/* <img src={LongArrow} alt={"long-arrow"} className="road-map__left-arrow" /> */}
           <div className="road-map__text">
             <p className="road-map__title">ROAD MAP</p>
-            <p className="road-map__content">
+            {/* <p className="road-map__content">
               An owner of a Sad Bear will receive many benefits including free
               generative NFTs as well as first access to and discounted
               pricing of future Sad Bears releases, including a 3D version.
@@ -62,19 +62,69 @@ export default function SadBear() {
               NFT projects. In the future we plan to create a DAO for holders
               of 7Labs NFTs. More detailed information on benefits and the
               roadmap coming soon.
-            </p>
-            <img
+            </p> */}
+            <div className="road-map__list">
+              <div className="road-map__item">
+                <h3>Q4 2021</h3>
+                <p>
+                  Sad Bears public mint. Sale date and details TBD.
+                  <br></br>
+                  <br></br>
+                  Once a week for 12 weeks, Sad Bear holders will have the chance to receive exclusive and rare Sad Bears (and other treats) airdropped to their wallets.
+                  <br></br>
+                  <br></br>
+                  7Labs will announce a weapon of mass destruction generative NFT, created using 3D eye-popping art. Sad Bears NFT holders will have privileges to mint.
+                </p>
+              </div>
+              <div className="road-map__item">
+                <h3>Q1 2022</h3>
+                <p>
+                  3D sad bear airdrop to Sad Bear NFT holders. Limited number available for public mint to the extra sad Sad Bears.
+                  <br></br>
+                  <br></br>
+                  Generative 3D pet dragon NFT airdrop to holders of the weapon of mass destruction NFT. Limited number of pet dragons available for public mint for those who like to ride dragons.
+                  <br></br>
+                  <br></br>
+                  Cupids airdrop to all 7Labs NFT holders for Valentine’s day. Limited number available for public mint for those who want to fall in love.
+                  <br></br>
+                  <br></br>
+                  Begin creating DAO for Sad Bears.
+                </p>
+              </div>
+              <div className="road-map__item">
+                <h3>Q2 2022</h3>
+                <p>
+                  Collection of free cute creatures capable of breeding will be airdropped to the community. Breeding functionality will be immediately available.
+                  <br></br>
+                  <br></br>
+                  Free generative ghosts airdrop to 7Labs NFT holders for Friday the 13th. Limited number will be available for public mint.
+                </p>
+              </div>
+              <div className="road-map__item">
+                <h3>Q4 2022</h3>
+                <p>
+                  One year after Sad Bear launch, all holders who have held their Bear for the entire year will be rewarded with a surprise NFT airdrop.
+                  <br></br>
+                  <br></br>
+                  Augmented reality Sad Bear? Maybe! We’ll try to figure it out.
+                  <br></br>
+                  <br></br>
+                  Implement a DAO smart contract that distributes all secondary sale proceeds (except artist royalties) to holders of community NFTs. Whoa! That’s a big deal. Good thing we have a star CTO.
+                </p>
+              </div>
+            </div>
+            {/* <img
               src={LongArrow}
               alt={"long-arrow"}
               className="road-map__right-arrow"
-            />
+            /> */}
           </div>
         </div>
       </section>
 
       <section className="connect" id="connect">
         <div className="connect__container">
-          <img src={LongArrow} alt={"short-arrow"} className="connect__arrow" />
+          <img src={ConnectArrow} alt={"short-arrow"} className="connect__arrow" />
           <img src={ConnectBear} alt={"connect-bear"} className="connect__bear" />
           <div className="connect__container-wrap">
             <div className="connect__info">
@@ -96,14 +146,14 @@ export default function SadBear() {
         <p className="rarities__title">RARITIES</p>
         <div className="rarities__container">
           <p className="rarities__text">"Coming soon"</p>
-          <img src={LongArrow} alt={"long-arrow"} className="rarities__arrow" />
+          <img src={RaritiesArrow} alt={"long-arrow"} className="rarities__arrow" />
         </div>
       </section>
 
       <section id="team" className="team">
         <p className="team__title">Team</p>
         <div className="team__wrap">
-          <img src={LongArrow} alt={"long-arrow"} className="team__arrow" />
+          <img src={TeamArrow} alt={"long-arrow"} className="team__arrow" />
           <div className="team__member">
             <img src={Jefe} alt={"jefe-bear"} className="team__member-avatar" />
             <div className="team__member-wrapper">
