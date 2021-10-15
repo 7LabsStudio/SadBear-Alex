@@ -38,7 +38,7 @@ export default function SadBear() {
               <br />
               If you've ever gotten rekt by a trade or fallen victim to a crypto scam, you might be a Sad Bear too. Join this community of Sad Bears to give moral support to each other and commiserate in our failures. Oh and also get some sweet rewards.
               <br></br><br></br>
-              After all 10,000 Sad Bears are sold, one month of exclusive airdrops will begin. Every day for a month, Sad Bears NFT holders will have the chance to receive exclusive airdrops including rare Sad Bears, surprise NFTs, $SOL, and more! Every Sad Bear you hold in your wallet increases your chance of winning an item.
+              After all 10,000 Sad Bears are purchased, 12 weeks of exclusive airdrops will begin. Once a week for 12 weeks, Sad Bear NFT holders will have the chance to receive exclusive airdrops including rare Sad Bears, surprise NFTs, $SOL, and more! Every Sad Bear you hold in your wallet increases your chance of winning an item.
             </p>
             {/* <button className="connect-button">CONNECT WALLET TO BUY</button>
             <p className="counter-placeholder">0/10000 SOLD</p> */}
