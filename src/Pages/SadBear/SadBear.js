@@ -108,9 +108,6 @@ export default function SadBear() {
                   <br></br>
                   <br></br>
                   Augmented reality Sad Bear? Maybe! We’ll try to figure it out.
-                  <br></br>
-                  <br></br>
-                  Implement a DAO smart contract that distributes all secondary sale proceeds (except artist royalties) to holders of community NFTs. Whoa! That’s a big deal. Good thing we have a star CTO.
                 </p>
               </div>
             </div>
