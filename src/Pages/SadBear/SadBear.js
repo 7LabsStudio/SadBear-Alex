@@ -286,7 +286,7 @@ export default function SadBear() {
           <div className="faq__answer-content">
             <p className="faq__answer">A: Yes, royalties are set at 5%.</p>
           </div>
-          <p className="faq__question">Q: What if I have additional faq__questions: </p>
+          <p className="faq__question">Q: What if I have additional questions? </p>
           <div className="faq__answer-content">
             <p className="faq__answer">
               A: Reach out to us on our Discord server or view the FAQ channel
