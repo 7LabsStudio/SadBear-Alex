@@ -95,9 +95,6 @@ export default function SadBear() {
               <div className="road-map__item">
                 <h3>Q2 2022</h3>
                 <p>
-                  Collection of free cute creatures capable of breeding will be airdropped to the community. Breeding functionality will be immediately available.
-                  <br></br>
-                  <br></br>
                   Free generative ghosts airdrop to 7Labs NFT holders for Friday the 13th. Limited number will be available for public mint.
                 </p>
               </div>
@@ -108,9 +105,6 @@ export default function SadBear() {
                   <br></br>
                   <br></br>
                   Augmented reality Sad Bear? Maybe! We’ll try to figure it out.
-                  <br></br>
-                  <br></br>
-                  Implement a DAO smart contract that distributes all secondary sale proceeds (except artist royalties) to holders of community NFTs. Whoa! That’s a big deal. Good thing we have a star CTO.
                 </p>
               </div>
             </div>
@@ -292,7 +286,7 @@ export default function SadBear() {
           <div className="faq__answer-content">
             <p className="faq__answer">A: Yes, royalties are set at 5%.</p>
           </div>
-          <p className="faq__question">Q: What if I have additional faq__questions: </p>
+          <p className="faq__question">Q: What if I have additional questions? </p>
           <div className="faq__answer-content">
             <p className="faq__answer">
               A: Reach out to us on our Discord server or view the FAQ channel
