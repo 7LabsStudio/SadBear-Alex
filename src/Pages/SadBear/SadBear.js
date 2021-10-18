@@ -95,9 +95,6 @@ export default function SadBear() {
               <div className="road-map__item">
                 <h3>Q2 2022</h3>
                 <p>
-                  Collection of free cute creatures capable of breeding will be airdropped to the community. Breeding functionality will be immediately available.
-                  <br></br>
-                  <br></br>
                   Free generative ghosts airdrop to 7Labs NFT holders for Friday the 13th. Limited number will be available for public mint.
                 </p>
               </div>
