@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import SadBear from './Pages/SadBear/SadBear';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import ProductPage from './Pages/ProductPage/ProductPage';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 import App from './App';
 
@@ -14,6 +15,7 @@ ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
       <App>
+        <ScrollToTop />
         <Switch>
           <Route exact path="/" component={SadBear} />
           <Route path="/product" component={ProductPage} />

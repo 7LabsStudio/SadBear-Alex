@@ -10,7 +10,7 @@ import Discord from "../../assets/images/discord.svg";
 import Jefe from "../../assets/images/jefe-bear.png";
 import Picasso from "../../assets/images/picasso-bear.png";
 import Blue from "../../assets/images/blue-bear.png";
-import Kosher from "../../assets/images/kosher-bear.png";
+// import Kosher from "../../assets/images/kosher-bear.png";
 import Nugget from "../../assets/images/nugget-bear.png";
 // import SecondCloud from "../../assets/images/bottom_rain.png";
 
