@@ -1,0 +1,26 @@
+@import './varsJacks.scss';
+
+.socials {
+	display: flex;
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.5s;
+
+		svg {
+			width: 2.8rem;
+			transition: all 0.5s;
+			will-change: transform;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		& + .socials__link {
+			margin: 0 0 0 2rem;
+		}
+	}
+}

@@ -1,0 +1,200 @@
+@import '../../../Styles/Jacks/varsJacks.scss';
+
+.Jacks {
+	.roadmap {
+		background: #0e0726;
+		padding: 13rem 0;
+		padding-left: 10.57%;
+		padding-right: 40px;
+
+		@media screen and (max-width: $large_desktop) {
+			padding-left: 40px;
+		}
+
+		@media screen and (max-width: $large_tablet) {
+			padding: 9rem 15px;
+		}
+
+		&__container {
+			max-width: 1350px;
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		&__simple-title {
+			margin-bottom: 6.5rem;
+			padding-left: 22.3rem;
+
+			@media screen and (max-width: $large_tablet) {
+				padding-left: 0;
+				text-align: center;
+				margin-bottom: 3.5rem;
+			}
+		}
+
+		&__wrap {
+			display: flex;
+			align-items: center;
+
+			@media screen and (max-width: $large_tablet) {
+				flex-direction: column;
+			}
+		}
+
+		&__left {
+			width: 50%;
+
+			@media screen and (max-width: $large_tablet) {
+				width: 100%;
+				margin-bottom: 6.5rem;
+			}
+
+			// width: calc(100% - 67.5rem - 20rem);
+			// margin-right: 20rem;
+			.img-wrap {
+				max-width: 46rem;
+
+				> div {
+					padding-bottom: 153.26%;
+				}
+			}
+		}
+
+		&__right {
+			width: 50%;
+
+			@media screen and (max-width: $large_tablet) {
+				width: 100%;
+			}
+
+			// max-width: 67.5rem;
+			// width: 100%;
+		}
+
+		&__list {
+			position: relative;
+			overflow: hidden;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 2.4rem;
+				transform: translateX(-50%);
+				width: 1px;
+				height: 100%;
+				background: #c4c4c4;
+			}
+		}
+
+		&__content {
+			p {
+				display: inline-block;
+				padding-right: 6rem;
+			}
+		}
+
+		&__item {
+			padding-left: 22.3rem;
+			position: relative;
+			margin-bottom: 9rem;
+
+			@media screen and (max-width: $large_tablet) {
+				padding-left: 7rem;
+				margin-bottom: 8rem;
+			}
+
+			&:first-child {
+				.roadmap__number span::after {
+					display: none;
+				}
+
+				.roadmap__content p {
+					position: relative;
+
+					&::before {
+						content: '';
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						right: 0;
+						width: 4.8rem;
+						height: 4.8rem;
+						background-image: url('../../../assets/images/Jacks/roadmap-icon1.png');
+						background-repeat: no-repeat;
+						background-size: cover;
+					}
+				}
+			}
+
+			&:nth-child(6) {
+				.roadmap__content p {
+					position: relative;
+
+					&::before {
+						content: '';
+						position: absolute;
+						top: 0;
+						transform: translateY(0);
+						right: 0;
+						width: 6rem;
+						height: 4.8rem;
+						background-image: url('../../../assets/images/Jacks/roadmap-icon2.png');
+						background-repeat: no-repeat;
+						background-size: contain;
+					}
+				}
+			}
+
+			&:last-child {
+				margin-bottom: 0px;
+
+				.roadmap__number span::before {
+					background-color: #0e0726;
+					height: 10000%;
+				}
+			}
+		}
+
+		&__number {
+			color: $secondary-c;
+			font-weight: 300;
+			font-size: 2.4rem;
+			line-height: 26/24 * 1;
+			letter-spacing: 0.08em;
+			margin-bottom: 2.5rem;
+
+			span {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 4.8rem;
+				height: 4.8rem;
+				border: 1px solid $secondary-c;
+				border-radius: 50%;
+				z-index: 2;
+				background-color: #0e0726;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: calc(100% + 1px);
+					left: 0;
+					width: 100%;
+					height: 1rem;
+					background-color: #0e0726;
+				}
+
+				&::after {
+					content: '';
+					position: absolute;
+					bottom: calc(100% + 1px);
+					left: 0;
+					width: 100%;
+					height: 1rem;
+					background-color: #0e0726;
+				}
+			}
+		}
+	}
+}

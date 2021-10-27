@@ -50,7 +50,6 @@ body {
 
 body {
 	color: $primary-c;
-	font-family: 'Electrolize', sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -90,7 +89,6 @@ h4 {
 	font-size: 2.4rem;
 	line-height: 26/24 * 1;
 	letter-spacing: 0.08em;
-	color: $secondary-c;
 }
 
 .simple-title {

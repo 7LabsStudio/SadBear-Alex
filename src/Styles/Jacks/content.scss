@@ -1,0 +1,20 @@
+@import './varsJacks.scss';
+
+.Jacks {
+	.content {
+		p {
+			font-weight: normal;
+			font-size: 1.8rem;
+			line-height: 144%;
+			color: #ffffff;
+
+			a {
+				color: $secondary-c;
+			}
+
+			& + p {
+				margin-top: 2rem;
+			}
+		}
+	}
+}

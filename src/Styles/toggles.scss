@@ -1,0 +1,35 @@
+.toogles {
+	&__item {
+		&--active {
+			.toogles__item-content {
+				display: block;
+				animation: opacityActive 2s forwards;
+			}
+		}
+
+		@keyframes opacityActive {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		&-content {
+			flex-direction: inherit;
+			justify-content: inherit;
+			display: none;
+
+			> div {
+				display: inherit;
+				flex-direction: inherit;
+				flex-wrap: inherit;
+				justify-content: inherit;
+				align-items: inherit;
+				width: 100%;
+			}
+		}
+	}
+}

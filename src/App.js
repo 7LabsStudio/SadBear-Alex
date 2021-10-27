@@ -1,9 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Context } from "./Context";
+
 
 function App({ children }) {
+  const [context, setContext] = useState("SadBear");
+
+  let favicon = document.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"]');
+
+  if (context === "Jacks") {
+    document.documentElement.className = "Jacks"
+    document.title = "Jacks"
+    favicon.forEach(function (element) {
+      element.setAttribute('href', '/favicon-jacks.png');
+    });
+  }
+
+  if (context === "SadBear") {
+    document.documentElement.className = "SadBear"
+    document.title = "Sad Bear"
+    favicon.forEach(function (element) {
+      element.setAttribute('href', '/favicon.ico');
+    });
+  }
 
   return (
-    <>{children}</>
+    <Context.Provider value={[context, setContext]}>
+      <div>{children}</div>
+    </Context.Provider>
   );
 }
 
