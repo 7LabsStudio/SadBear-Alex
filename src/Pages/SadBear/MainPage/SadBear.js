@@ -34,7 +34,7 @@ export default function SadBear() {
             <p className="main-screen__description">Shorting Solana since $3.</p>
             <p className="main-screen__content">
               Sad Bear holders will be airdropped four free generative art collections. See Road Map for details.
-              <br></br>
+              <br /><br />
               It all started with a group of investment bears who found success
               in 2020 hoarding and selling toilet paper during the start of the pandemic.
               The group is also famous for shorting tiger petting zoos during the Tiger King hype.
@@ -98,8 +98,6 @@ export default function SadBear() {
                 <p>
                   One year after Sad Bear launch, all holders who have held their Bear for the entire year will be rewarded with a surprise NFT airdrop.
                   <br></br>
-                  <br></br>
-                  Augmented reality Sad Bear? Maybe! We’ll try to figure it out.
                 </p>
               </div>
             </div>
@@ -135,8 +133,7 @@ export default function SadBear() {
       <section id="rarities" className="rarities">
         <p className="rarities__title">RARITIES</p>
         <div className="rarities__container">
-          <p className="rarities__text content">Try our
-            <Link smooth to="/product"> trait explorer</Link>
+          <p className="rarities__text content">Rarity chart coming soon.
           </p>
           <img src={RaritiesArrow} alt={"long-arrow"} className="rarities__arrow" />
         </div>
