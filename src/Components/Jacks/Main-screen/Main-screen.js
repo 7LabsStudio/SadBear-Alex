@@ -15,7 +15,7 @@ export const MainScreen = () => {
               <h1 className="main-screen__title">PUMPKIN JACKS</h1>
               <div className="main-screen__content content">
                 <p>These Pumpkin Jacks are part of the
-                  <Link target="_blank" rel="noopener noreferrer" to="/"> Sad Bear 12-week giveaway. </Link>
+                  <Link to="/"> Sad Bear 12-week giveaway. </Link>
                   The Sad Bears needed a pick me up, so we are releasing this special collection of Halloween jack-o'lanterns (better late than never). The jacks will be airdropped to wallets holding Sad Bears. The more Sad Bears in a wallet, the higher the chance of receiving a pumpkin jack. The more rare your Sad Bear, the higher your chance of receiving a pumpkin jack.
                 </p>
               </div>

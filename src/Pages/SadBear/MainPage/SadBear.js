@@ -81,7 +81,7 @@ export default function SadBear() {
                   Once a week for 12 weeks, Sad Bear holders will have the chance to receive exclusive and rare rewards airdropped to their wallets. We will airdrop four complete generative NFT collections! That's right, four. Each airdropped collection will be composed of 5000 beautiful generative NFTs. Below is the first collection. Three more collections will be announced soon!
                 </p>
                 <ul>
-                  <li> <Link target="_blank" rel="noopener noreferrer" smooth to="/pumpkinjacks"> Pumpkin Jacks </Link> generative NFT collection.</li>
+                  <li> <Link smooth to="/pumpkinjacks"> Pumpkin Jacks </Link> generative NFT collection.</li>
                 </ul>
               </div>
               <div className="road-map__item content">
