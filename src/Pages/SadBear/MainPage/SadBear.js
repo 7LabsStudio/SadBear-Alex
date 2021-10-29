@@ -99,7 +99,7 @@ export default function SadBear() {
               <div className="road-map__item content">
                 <h3>Q4 2022</h3>
                 <p>
-                  One year after Sad Bear launch, all holders who have held their Bear for the entire year will be rewarded with a surprise NFT airdrop.
+                  One year after Sad Bear launch, all holders who have held their Bear for the entire year will be rewarded with a surprise airdrop.
                   <br></br>
                 </p>
               </div>
