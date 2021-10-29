@@ -87,6 +87,9 @@ export default function SadBear() {
               <div className="road-map__item content">
                 <h3>Q1 2022</h3>
                 <p>
+                  5% of primary gross proceeds donated to charity.
+                  <br></br>
+                  <br></br>
                   3D sad bear airdrop to Sad Bear NFT holders. Limited number available for public mint to the extra sad Sad Bears.
                   <br></br>
                   <br></br>
@@ -96,7 +99,7 @@ export default function SadBear() {
               <div className="road-map__item content">
                 <h3>Q4 2022</h3>
                 <p>
-                  One year after Sad Bear launch, all holders who have held their Bear for the entire year will be rewarded with a surprise NFT airdrop.
+                  One year after Sad Bear launch, all holders who have held their Bear for the entire year will be rewarded with a surprise airdrop.
                   <br></br>
                 </p>
               </div>
