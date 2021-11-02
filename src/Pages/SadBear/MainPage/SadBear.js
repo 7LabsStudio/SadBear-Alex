@@ -87,7 +87,7 @@ export default function SadBear() {
               <div className="road-map__item content">
                 <h3>Q1 2022</h3>
                 <p>
-                  5% of primary gross proceeds donated to charity.
+                  5% of primary gross proceeds will be donated to <a href="https://vitalground.org/">Vital Ground</a> bear conservation to protect bears and their natural habitats.
                   <br></br>
                   <br></br>
                   3D sad bear airdrop to Sad Bear NFT holders. Limited number available for public mint to the extra sad Sad Bears.
