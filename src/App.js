@@ -23,6 +23,14 @@ function App({ children }) {
     });
   }
 
+  if (context === "Cupids") {
+    document.documentElement.className = "Cupids"
+    document.title = "Cupids"
+    favicon.forEach(function (element) {
+      element.setAttribute('href', '/favicon.ico');
+    });
+  }
+
   return (
     <Context.Provider value={[context, setContext]}>
       <div>{children}</div>

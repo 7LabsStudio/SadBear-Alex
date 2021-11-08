@@ -1,0 +1,67 @@
+@import '../../../Styles/Jacks/varsJacks.scss';
+
+.Cupids {
+	.main-screen {
+		padding-top: 22.6rem;
+		padding-bottom: 15.1rem;
+		position: relative;
+		background-image: url('../../../assets/images/Cupids/main-screen-bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		// @media screen and (max-width: $large_tablet) {
+		// 	padding-top: 11rem;
+		// }
+
+		// @media screen and (max-width: $large_mobile) {
+		// 	padding-bottom: 23.5rem;
+		// }
+
+		.center-wrap {
+			@media screen and (max-width: $large_mobile) {
+				max-width: 100%;
+				padding: 0;
+			}
+		}
+
+		&__wrap {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: relative;
+			z-index: 4;
+
+			@media screen and (max-width: $large_tablet) {
+				flex-direction: column;
+			}
+		}
+
+		&__right {
+			max-width: 57rem;
+			width: 100%;
+
+			@media screen and (max-width: $large_mobile) {
+				max-width: 100%;
+				padding: 0 15px;
+				margin-bottom: 1.5rem;
+			}
+		}
+
+		&__img-wrap {
+			max-width: 57.2rem;
+		}
+
+		&__title {
+			color: #ad4656;
+			margin-bottom: 1.6rem;
+
+			// @media screen and (max-width: $large_tablet) {
+			// 	font-size: 6.4rem;
+			// }
+		}
+
+		&__content {
+			width: 100%;
+		}
+	}
+}

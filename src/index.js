@@ -12,6 +12,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import ProductPage from './Pages/SadBear/ProductPage/ProductPage';
 import BearChartPage from './Pages/SadBear/BearChartPage/BearChartPage';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import CupidsPage from './Pages/Cupids/Pages/CupidsPage/CupidsPage'
 import Jacks from './Pages/Jacks/Pages/Jacks'
 import JacksChartPage from './Pages/Jacks/Pages/ChartPage'
 import JacksProductPage from './Pages/Jacks/Pages/ProductPage'
@@ -30,6 +31,9 @@ ReactDOM.render(
           <Route path="/pumpkinjacks/chart" component={JacksChartPage} />
           <Route path="/pumpkinjacks/product" component={JacksProductPage} />
           <Route path="/pumpkinjacks" component={Jacks} />
+          {/* <Route path="/pumpkinjacks/chart" component={JacksChartPage} /> */}
+          {/* <Route path="/pumpkinjacks/product" component={JacksProductPage} /> */}
+          <Route path="/cupids" component={CupidsPage} />
         </Switch>
       </App>
     </HashRouter>
