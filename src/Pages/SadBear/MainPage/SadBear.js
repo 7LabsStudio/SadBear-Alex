@@ -41,23 +41,28 @@ export default function SadBear() {
               Then they decided to short some crypto, SOL specifically. Didn't go well...
               <br></br>
               They became the
-              <b className="main-screen__sad-bears"> Sad Bears</b>.<br />
-              <br />
-              If you've ever gotten rekt by a trade or fallen victim to a crypto scam, you might be a Sad Bear too. Join this community of Sad Bears to give moral support to each other and commiserate in our failures. Oh and also get some sweet rewards.
-              <br></br><br></br>
-              After all 10,000 Sad Bears are purchased, 12 weeks of exclusive airdrops will begin. Once a week for 12 weeks, Sad Bear NFT holders will have the chance to receive exclusive airdrops, including four complete generative art collections! That's FOUR complete collections. See Road Map for more details. Every Sad Bear you hold in your wallet increases your chance of winning an item. A higher rarity Sad Bear increases your chance of receiving an airdropped item.
+              <b className="main-screen__sad-bears"> Sad Bears</b>.
             </p>
-            {/* <button className="connect-button">CONNECT WALLET TO BUY</button>
-            <p className="counter-placeholder">0/10000 SOLD</p> */}
           </div>
           <div className="main-screen__image"></div>
+        </div>
+        <div className="main-screen__wrap main-screen__wrap2">
+          <div className="main-screen__text">
+            <p className="main-screen__content">
+              If you've ever gotten rekt by a trade or fallen victim to a crypto scam, you might be a Sad Bear too. Join this community of Sad Bears to give moral support to each other and commiserate in our failures. Oh and also get some sweet rewards.
+            </p>
+          </div>
+          <div className="main-screen__text">
+            <p className="main-screen__content">
+              After all 10,000 Sad Bears are purchased, 12 weeks of exclusive airdrops will begin. Once a week for 12 weeks, Sad Bear NFT holders will have the chance to receive exclusive airdrops, including four complete generative art collections! That's FOUR complete collections. See Road Map for more details. Every Sad Bear you hold in your wallet increases your chance of winning an item. A higher rarity Sad Bear increases your chance of receiving an airdropped item.
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="road-map">
         <div id="road-map" className="road-map__wrap">
           <p className="road-map__left-text">Minting iN late November</p>
-          {/* <img src={LongArrow} alt={"long-arrow"} className="road-map__left-arrow" /> */}
           <div className="road-map__text">
             <p className="road-map__title">ROAD MAP</p>
             {/* <p className="road-map__content">
@@ -104,11 +109,6 @@ export default function SadBear() {
                 </p>
               </div>
             </div>
-            {/* <img
-              src={LongArrow}
-              alt={"long-arrow"}
-              className="road-map__right-arrow"
-            /> */}
           </div>
         </div>
       </section>
@@ -136,7 +136,7 @@ export default function SadBear() {
       <section id="rarities" className="rarities">
         <p className="rarities__title">RARITIES</p>
         <div className="rarities__container">
-          <p className="rarities__text content">Rarity chart coming soon.
+          <p className="rarities__text content">Rarity <Link smooth to="/chart"> chart </Link>  coming soon.
           </p>
           <img src={RaritiesArrow} alt={"long-arrow"} className="rarities__arrow" />
         </div>

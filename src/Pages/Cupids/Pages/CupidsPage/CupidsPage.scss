@@ -1,0 +1,55 @@
+.Cupids {
+	body {
+		background-color: #ffffff;
+	}
+
+  .simple-title {
+    font-weight: normal;
+    font-size: 9.6rem;
+    line-height: 13.3rem;
+  }
+
+  .content {
+		p {
+			font-weight: normal;
+			font-size: 2rem;
+			line-height: 3.2rem;
+			width: 100%;
+			color: #000000;
+
+			a {
+				color: #DC7081;
+			}
+
+			& + p {
+				margin-top: 2rem;
+			}
+		}
+	}
+
+  .socials {
+    display: flex;
+  
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s;
+  
+      svg {
+        width: 2.8rem;
+        transition: all 0.5s;
+        will-change: transform;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+  
+      & + .socials__link {
+        margin: 0 0 0 2rem;
+      }
+    }
+  }
+  
+}

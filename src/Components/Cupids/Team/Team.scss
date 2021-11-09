@@ -1,0 +1,136 @@
+@import '../../../Styles/Jacks/varsJacks.scss';
+
+.Jacks {
+	.team {
+		background: #130d27;
+
+		@media screen and (max-width: $large_tablet) {
+			background: #140c2f;
+		}
+
+		&__top {
+			padding: 13rem 0;
+
+			@media screen and (max-width: $large_tablet) {
+				padding: 8rem 0 5.5rem;
+			}
+		}
+
+		&__bottom {
+			min-height: 8rem;
+			background-color: #140c2f;
+		}
+
+		&__simple-title {
+			text-align: center;
+			margin-bottom: 8rem;
+
+			@media screen and (max-width: $large_tablet) {
+				margin-bottom: 4.5rem;
+			}
+		}
+
+		&__list {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-bottom: -5.5rem;
+
+			@media screen and (max-width: $large_tablet) {
+				margin-bottom: -3rem;
+				justify-content: space-between;
+			}
+		}
+
+		&__item {
+			width: calc((100% - 5.5rem * 4) / 5);
+			margin-bottom: 5.5rem;
+			background: #1c172d;
+			border-radius: 16px;
+			padding: 2.5rem 3.5rem 7rem;
+			margin-right: 3rem;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			@media screen and (max-width: $large_tablet) {
+				width: calc((100% - 3rem * 1) / 2);
+				padding: 2rem 2rem 3.5rem;
+				margin-bottom: 3rem;
+				margin-right: 0;
+			}
+
+			&-title {
+				font-weight: bold;
+				font-size: 2rem;
+				line-height: 22/20 * 1;
+				margin-bottom: 1rem;
+			}
+
+			&-position {
+				font-weight: 600;
+				font-size: 1.6rem;
+				line-height: 18/16 * 1;
+				color: $secondary-c;
+				margin-bottom: 3.5rem;
+
+				a {
+					position: relative;
+					font-weight: 700;
+
+					&::before {
+						content: '';
+						position: absolute;
+						left: 0px;
+						bottom: -2px;
+						width: 100%;
+						height: 1px;
+						background: $secondary-c;
+						opacity: 1;
+						transition: opacity 0.5s, width 0.5s;
+					}
+
+					&:hover::before {
+						width: 0%;
+						opacity: 0;
+					}
+				}
+			}
+
+			&-info {
+				p {
+					font-weight: 400;
+					font-size: 1.2rem;
+					line-height: 13/12 * 1;
+					margin-bottom: 1.6rem;
+
+					&:last-child {
+						margin-bottom: 0px;
+					}
+				}
+
+				strong {
+					font-weight: 600;
+				}
+			}
+
+			&--hide {
+				margin-bottom: 0px !important;
+				padding: 0px !important;
+				opacity: 0 !important;
+				height: 0px !important;
+			}
+		}
+
+		&__img-wrap {
+			max-width: 12.8rem;
+			width: 100%;
+			margin: 0 auto 1.2rem;
+
+			@media screen and (max-width: $large_tablet) {
+				margin: 0 auto 1.6rem;
+			}
+		}
+	}
+}
