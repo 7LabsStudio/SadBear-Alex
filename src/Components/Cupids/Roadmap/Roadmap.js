@@ -2,8 +2,10 @@ import React from 'react';
 import "./Roadmap.scss"
 
 export const Roadmap = () => (
-  <section className="roadmap" >
-    <div className="roadmap__container">
+  <section className="roadmap" id="roadmap-ar">
+    <div className="mobile-opacity-top"></div>
+    <div className="mobile-opacity-bottom"></div>
+    <div className="center-wrap">
       <div className="roadmap__wrap" >
         <div className="roadmap__right" id="roadmap-ar">
           <h2 className="roadmap__simple-title simple-title">Roadmap</h2>

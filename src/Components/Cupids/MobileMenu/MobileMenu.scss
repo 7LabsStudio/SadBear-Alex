@@ -1,6 +1,6 @@
 @import '../../../Styles/Jacks/varsJacks.scss';
 
-.Jacks {
+.Cupids {
 	.mobile-menu {
 		position: fixed;
 		width: 100%;
@@ -19,7 +19,7 @@
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			background: rgba(#0e0726, 0.75);
+			background: rgba(#000000, 0.75);
 			top: 0;
 			left: 0;
 			cursor: pointer;
@@ -38,10 +38,8 @@
 		}
 
 		&__wrap {
-			background-image: url('../../../assets/images/Jacks/mobile-bg.png');
-			background-repeat: no-repeat;
-			background-size: cover;
-			padding: 3rem 15px;
+			background-color: #fff;
+			padding: 4.25rem 4.25rem 4.25rem 7.5rem;
 			width: 480px;
 			height: 100%;
 			position: absolute;
@@ -88,12 +86,17 @@
 		}
 
 		&__act {
-			width: 2rem;
-			height: 2rem;
+			width: 3.5rem;
+			height: 3.5rem;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
+
+			svg {
+				width: 100%;
+				height: 100%;
+			}
 		}
 
 		&__nav {
@@ -103,29 +106,10 @@
 				display: flex;
 				flex-direction: column;
 				list-style: none;
-				align-items: center;
 			}
 
 			&-item {
-				margin-bottom: 4rem;
-				position: relative;
-
-				&::before {
-					content: '';
-					position: absolute;
-					left: -10%;
-					bottom: 3px;
-					width: 120%;
-					height: 1rem;
-					background: #e87741;
-					transform: scaleX(0);
-					transition: transform 0.5s;
-					will-change: transform;
-				}
-
-				&:hover::before {
-					transform: scaleX(1);
-				}
+				margin-bottom: 6.4rem;
 
 				&:last-child {
 					margin-bottom: 0;
@@ -136,6 +120,25 @@
 				font-size: 3.6rem;
 				position: relative;
 				z-index: 5;
+				color: #dc7081;
+
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: 0px;
+					width: 100%;
+					height: 3px;
+					background: #dc7081;
+					opacity: 0;
+					transition: 0.5s;
+				}
+
+				&:hover {
+					&::before {
+						opacity: 1;
+					}
+				}
 			}
 		}
 	}

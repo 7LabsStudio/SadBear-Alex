@@ -1,12 +1,11 @@
 import React, { useContext, useEffect } from 'react';
 import { Context } from "../../../../Context";
 import "./CupidsPage.scss";
-// import About from '../../../Components/Jacks/About/About';
 import Rarity from '../../../../Components/Cupids/Rarity/Rarity';
 import Roadmap from '../../../../Components/Cupids/Roadmap/Roadmap';
-// import Header from '../../../Components/Jacks/Header/Header';
+import Header from '../../../../Components/Cupids/Header/Header';
 import MainScreen from '../../../../Components/Cupids/MainScreen/MainScreen';
-// import Team from '../../../Components/Jacks/Team/Team';
+import Team from '../../../../Components/Cupids/Team/Team';
 
 export const Home = () => {
   const [, setContext] = useContext(Context);
@@ -17,12 +16,12 @@ export const Home = () => {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <main>
         <MainScreen />
         <Rarity />
         <Roadmap />
-        {/* <Team /> */}
+        <Team />
       </main>
     </>
   )
