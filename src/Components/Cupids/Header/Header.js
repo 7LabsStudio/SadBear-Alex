@@ -21,7 +21,6 @@ export const Header = () => {
             </Link>
             <nav className="header__nav mobile--hide">
               <ul className="header__nav-list">
-                {/* <li className="header__nav-item"><Link className="header__nav-link" smooth to="/pumpkinjacks/#about-ar">About</Link></li> */}
                 <li className="header__nav-item"><Link className="header__nav-link" smooth to="/cupids/#rarity-ar">Rarity</Link></li>
                 <li className="header__nav-item"><Link className="header__nav-link" smooth to="/cupids/#roadmap-ar">Roadmap</Link></li>
                 <li className="header__nav-item"><Link className="header__nav-link" smooth to="/cupids/#team-ar">Team</Link></li>
