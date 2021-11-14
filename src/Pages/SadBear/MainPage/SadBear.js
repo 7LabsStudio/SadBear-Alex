@@ -54,7 +54,7 @@ export default function SadBear() {
           </div>
           <div className="main-screen__text">
             <p className="main-screen__content">
-              After all 10,000 Sad Bears are purchased, 12 weeks of exclusive airdrops will begin. Once a week for 12 weeks, Sad Bear NFT holders will have the chance to receive exclusive airdrops, including four complete generative art collections! That's FOUR complete collections. See Road Map for more details. Every Sad Bear you hold in your wallet increases your chance of winning an item. A higher rarity Sad Bear increases your chance of receiving an airdropped item.
+              After all 5,000 Sad Bears are purchased, 12 weeks of exclusive airdrops will begin. Once a week for 12 weeks, Sad Bear NFT holders will have the chance to receive exclusive airdrops, including four complete generative art collections! That's FOUR complete collections. See Road Map for more details. Every Sad Bear you hold in your wallet increases your chance of winning an item. A higher rarity Sad Bear increases your chance of receiving an airdropped item.
             </p>
           </div>
         </div>
@@ -209,7 +209,7 @@ export default function SadBear() {
           <p className="faq__question">Q: What are Sad Bears? </p>
           <div className="faq__answer-content">
             <p className="faq__answer">
-              A: Sad Bears are a collection of 10,000 algorithmically generated Bears that exist on the Solana blockchain.
+              A: Sad Bears are a collection of 5,000 algorithmically generated Bears that exist on the Solana blockchain.
             </p>
           </div>
           <p className="faq__question">Q: How can I buy a Sad Bear? </p>
