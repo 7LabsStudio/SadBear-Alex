@@ -1,21 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as serviceWorker from './serviceWorker';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+
 import './Styles/normalize.scss';
 import './Styles/fonts.scss';
 import './Styles/main.scss';
 import './Styles/toggles.scss';
-import './Styles/Jacks/socials.scss';
-import './Styles/Jacks/content.scss';
-import * as serviceWorker from './serviceWorker';
-import SadBear from './Pages/SadBear/MainPage/SadBear';
-import { HashRouter, Route, Switch } from 'react-router-dom';
-import ProductPage from './Pages/SadBear/ProductPage/ProductPage';
-import BearChartPage from './Pages/SadBear/BearChartPage/BearChartPage';
-import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
-import CupidsPage from './Pages/Cupids/Pages/CupidsPage/CupidsPage'
-import Jacks from './Pages/Jacks/Pages/Jacks'
-import JacksChartPage from './Pages/Jacks/Pages/ChartPage'
-import JacksProductPage from './Pages/Jacks/Pages/ProductPage'
+
+
+import SadBear from './SadBear/Pages/MainPage/SadBear';
+import BearChartPage from './SadBear/Pages/ChartPage/ChartPage';
+import BearProductPage from './SadBear/Pages/ProductPage/ProductPage'
+
+
+import CupidsPage from './Cupids/Pages/CupidsPage/CupidsPage'
+import CupidsChartPage from './Cupids/Pages/ChartPage/ChartPage'
+
+
+import Jacks from './Jacks/Pages/Jacks'
+import JacksChartPage from './Jacks/Pages/ChartPage'
+import JacksProductPage from './Jacks/Pages/ProductPage'
 
 import App from './App';
 
@@ -26,13 +32,12 @@ ReactDOM.render(
         <ScrollToTop />
         <Switch>
           <Route exact path="/" component={SadBear} />
-          <Route path="/product" component={ProductPage} />
+          <Route path="/product" component={BearProductPage} />
           <Route path="/chart" component={BearChartPage} />
           <Route path="/pumpkinjacks/chart" component={JacksChartPage} />
           <Route path="/pumpkinjacks/product" component={JacksProductPage} />
           <Route path="/pumpkinjacks" component={Jacks} />
-          {/* <Route path="/pumpkinjacks/chart" component={JacksChartPage} /> */}
-          {/* <Route path="/pumpkinjacks/product" component={JacksProductPage} /> */}
+          <Route path="/cupids/chart" component={CupidsChartPage} />
           <Route path="/cupids" component={CupidsPage} />
         </Switch>
       </App>

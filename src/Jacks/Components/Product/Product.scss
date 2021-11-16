@@ -1,0 +1,192 @@
+@import '../../Styles/varsJacks.scss';
+
+.Jacks {
+	.product {
+		background: #140c2f;
+		padding-top: 16.5rem;
+		padding-bottom: 21rem;
+
+		@media screen and (max-width: $large_tablet) {
+			padding-top: 11rem;
+			padding-bottom: 9rem;
+		}
+
+		&__title {
+			font-weight: bold;
+			font-size: 6.4rem;
+			line-height: 70/60 * 1;
+			text-transform: uppercase;
+			text-align: center;
+			color: $secondary-c;
+			margin-bottom: 6.5rem;
+
+			@media screen and (max-width: $large_tablet) {
+				font-size: 4.8rem;
+				text-align: left;
+				margin-bottom: 4.5rem;
+				line-height: 1.12;
+			}
+		}
+
+		&__top {
+			display: flex;
+			align-items: center;
+			padding-bottom: 5rem;
+			border-bottom: 1px solid #4c4072;
+
+			@media screen and (max-width: $large_tablet) {
+				flex-wrap: wrap;
+				justify-content: center;
+				padding-bottom: 1rem;
+			}
+
+			.toogles__item-title--active {
+				color: $secondary-c;
+			}
+
+			&-item {
+				font-weight: 600;
+				font-size: 2.4rem;
+				line-height: 26/24 * 1;
+				// color: $primary-c;
+				transition: color 0.5s;
+				cursor: pointer;
+				position: relative;
+				padding-right: 2.8rem;
+
+				@media screen and (max-width: $large_tablet) {
+					margin-bottom: 3.5rem;
+				}
+
+				& + .product__top-item {
+					margin-left: 2.8rem;
+				}
+
+				&:last-child {
+					padding-right: 0;
+
+					&::before {
+						display: none;
+					}
+				}
+
+				&:nth-child(3n + 3) {
+					@media screen and (max-width: $large_tablet) {
+						padding-right: 0;
+
+						&::before {
+							display: none;
+						}
+					}
+				}
+
+				&:hover {
+					color: $secondary-c;
+				}
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 1px;
+					height: 100%;
+					background: #4c4072;
+				}
+			}
+		}
+
+		&__body {
+			&-title {
+				font-weight: bold;
+				font-size: 4.8rem;
+				line-height: 53/48 * 1;
+				text-align: center;
+				margin-bottom: 5.5rem;
+				padding-top: 4rem;
+
+				@media screen and (max-width: $large_tablet) {
+					padding-top: 5rem;
+					margin-bottom: 7rem;
+				}
+			}
+
+			&-subtitle {
+				font-weight: bold;
+				font-size: 3.2rem;
+				line-height: 35/32 * 1;
+				margin-bottom: 5.5rem;
+				text-align: center;
+
+				@media screen and (max-width: $large_tablet) {
+					margin-bottom: 3.5rem;
+				}
+			}
+
+			&-scroll {
+				overflow: auto;
+
+				@media screen and (max-width: $large_tablet) {
+					margin-left: 10.58%;
+					margin-right: 10.58%;
+				}
+
+				&::-webkit-scrollbar-thumb {
+					background: #544689;
+					border-radius: 16px;
+				}
+
+				&::-webkit-scrollbar {
+					height: 1rem;
+					background: #30284c;
+				}
+			}
+
+			&-list {
+				display: flex;
+				width: 100%;
+				padding-bottom: 1.8rem;
+			}
+
+			&-box {
+				margin-bottom: 8rem;
+
+				@media screen and (max-width: $large_tablet) {
+					margin-bottom: 6rem;
+				}
+
+				&:last-child {
+					margin-bottom: 0px;
+				}
+			}
+		}
+
+		&__item {
+			min-width: 33.5rem;
+			margin-right: 2rem;
+			background: #0c071d;
+			padding: 9rem 1rem;
+
+			&:last-child {
+				margin-right: 0px;
+			}
+
+			&-title {
+				font-weight: normal;
+				font-size: 2.4rem;
+				line-height: 26/24 * 1;
+				margin-bottom: 3rem;
+				text-align: center;
+			}
+
+			&-img {
+				max-width: 18.5rem;
+				margin: 0 auto;
+
+				> div {
+					padding-bottom: 110.86%;
+				}
+			}
+		}
+	}
+}

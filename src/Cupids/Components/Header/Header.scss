@@ -1,0 +1,131 @@
+@import '../../Styles/varsCupids.scss';
+
+.Cupids {
+	.header {
+		padding: 4rem 26rem 0;
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		z-index: 2;
+
+		@media screen and (max-width: $large_tablet) {
+			padding: 4rem 0rem 0;
+		}
+
+		&__wrap {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: relative;
+
+			@media screen and (max-width: $large_tablet) {
+			}
+		}
+
+		&__logo {
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+			color: #ad4656;
+			font-weight: normal;
+			display: flex;
+			align-items: center;
+
+			p {
+				margin-left: 1.2rem;
+				position: relative;
+
+				&::before {
+					position: absolute;
+					content: '';
+					top: 100%;
+					height: 1px;
+					width: 100%;
+					background-color: #ad4656;
+					opacity: 0;
+					transition: 0.5s;
+				}
+			}
+
+			&:hover {
+				p::before {
+					opacity: 1;
+				}
+			}
+		}
+
+		&__nav {
+			&-list {
+				display: flex;
+				align-items: center;
+			}
+
+			&-item {
+				margin-right: 2.4rem;
+
+				&:last-child {
+					margin-right: 0px;
+				}
+			}
+
+			&-link {
+				position: relative;
+				font-weight: 500;
+				font-size: 1.6rem;
+				line-height: 2.4rem;
+				color: #000000;
+
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0px;
+					bottom: -2px;
+					width: 100%;
+					height: 1px;
+					background: #000000;
+					transform: scaleX(0);
+					transition: transform 0.5s;
+				}
+
+				&:hover::before {
+					transform: scaleX(1);
+				}
+			}
+		}
+
+		&__socials {
+			@media screen and (max-width: $large_tablet) {
+				margin-left: auto;
+				margin-right: 2.8rem;
+			}
+		}
+
+		&__burger {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 1.6em;
+			cursor: pointer;
+
+			&:hover div {
+				&:nth-child(2) {
+					width: 100%;
+				}
+			}
+
+			div {
+				margin-bottom: 0.7rem;
+				width: 100%;
+				border-bottom: 2px solid #ad4656;
+				transition: width 0.5s, border-bottom-color 0.5s;
+
+				&:nth-child(2) {
+					width: 50%;
+				}
+
+				&:last-child {
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
