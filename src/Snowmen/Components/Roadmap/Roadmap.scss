@@ -1,0 +1,109 @@
+@import '../../Styles/varsSnowmen.scss';
+
+.Snowmen {
+	.roadmap {
+		padding: 27.9rem 0rem 8.2rem;
+		position: relative;
+		z-index: 2;
+		background-image: url('../../Images/Roadmap-bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: top;
+
+		@media screen and (max-width: $large_tablet) {
+			padding: 8rem 0rem 7.1rem;
+			background-image: url('../../Images/Roadmap-bg-mobile.png');
+			background-position-y: center;
+		}
+
+		@media screen and (max-width: $large_mobile) {
+			background-position-y: top;
+		}
+
+		&__wrap {
+			@media screen and (max-width: $large_mobile) {
+				padding-left: 4.7rem;
+			}
+		}
+
+		&__simple-title {
+			color: #ad4656;
+			margin-bottom: 8.2rem;
+			text-align: center;
+			color: #004570;
+
+			@media screen and (max-width: $large_tablet) {
+				margin-bottom: 4.8rem;
+				text-align: left;
+			}
+		}
+
+		&__list {
+			position: relative;
+			display: flex;
+			justify-content: center;
+
+			@media screen and (max-width: $large_tablet) {
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+		}
+
+		&__content {
+			max-width: 33rem;
+
+			p {
+				font-weight: 600;
+				font-size: 2rem;
+				line-height: 3.2rem;
+				color: #004570;
+
+				@media screen and (max-width: $large_tablet) {
+					font-size: 1.6rem;
+					line-height: 2.4rem;
+				}
+			}
+		}
+
+		&__item {
+			max-width: 45.3rem;
+			width: 100%;
+			margin-right: 2rem;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			@media screen and (max-width: $large_tablet) {
+				margin-bottom: 4.8rem;
+				margin-right: 0;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&__number {
+			font-weight: bold;
+			font-size: 4.8rem;
+			line-height: 6.5rem;
+			letter-spacing: 0.08em;
+			color: #004570;
+			background: #ffffff;
+			box-shadow: 0px 4px 8px rgba(68, 126, 169, 0.15);
+			border-radius: 7.6rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 10.7rem;
+			height: 11.3rem;
+			margin-bottom: 1.2rem;
+
+			@media screen and (max-width: $large_tablet) {
+				width: 9.1rem;
+				height: 9.1rem;
+			}
+		}
+	}
+}

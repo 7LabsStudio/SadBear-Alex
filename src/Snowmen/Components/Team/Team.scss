@@ -1,0 +1,128 @@
+@import '../../Styles/varsSnowmen.scss';
+.Snowmen {
+	.team {
+		padding: 27.1rem 0 33.4rem;
+		position: relative;
+
+		@media screen and (max-width: $large_tablet) {
+			padding: 8rem 0 6.1rem;
+		}
+
+		&::before {
+			position: absolute;
+			z-index: -1;
+			content: '';
+			background: linear-gradient(
+				180deg,
+				#ffffff 11.3%,
+				rgba(255, 255, 255, 0) 100%
+			);
+			width: 100%;
+			height: 90%;
+			top: 0;
+
+			@media screen and (max-width: $large_tablet) {
+				display: none;
+			}
+		}
+
+		&-bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			bottom: 0;
+			left: 0;
+			z-index: -2;
+			object-fit: cover;
+			object-position: center bottom;
+		}
+
+		&__simple-title {
+			text-align: center;
+			color: #000000;
+			margin-bottom: 3.8rem;
+
+			@media screen and (max-width: $large_tablet) {
+				margin-bottom: 0;
+				color: #004570;
+			}
+		}
+
+		&__list {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__item {
+			width: 45.3rem;
+			margin-right: 2.1rem;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			@media screen and (max-width: $large_tablet) {
+				margin: 0 auto;
+
+				&:last-of-type {
+					margin: 0 auto;
+				}
+			}
+
+			&-wrap {
+				position: absolute;
+			}
+
+			&-title {
+				font-weight: bold;
+				font-size: 3.2rem;
+				line-height: 3.2rem;
+				margin-bottom: 0.8rem;
+				color: #000000;
+			}
+
+			&-position {
+				font-weight: bold;
+				font-size: 2rem;
+				line-height: 3.2rem;
+				font-size: 2rem;
+				color: #f26a42;
+
+				@media screen and (max-width: $large_tablet) {
+					color: #4273f2;
+					font-weight: normal;
+				}
+
+				a {
+					position: relative;
+					font-weight: 700;
+
+					&::before {
+						content: '';
+						position: absolute;
+						left: 0px;
+						bottom: -2px;
+						width: 100%;
+						height: 2px;
+						background: #4273f2;
+						opacity: 1;
+						transition: opacity 0.5s, width 0.5s;
+					}
+
+					&:hover::before {
+						width: 0%;
+						opacity: 0;
+					}
+				}
+			}
+		}
+
+		&__img-wrap {
+			width: 100%;
+		}
+	}
+}

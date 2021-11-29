@@ -23,6 +23,10 @@ import Jacks from './Jacks/Pages/Jacks'
 import JacksChartPage from './Jacks/Pages/ChartPage'
 import JacksProductPage from './Jacks/Pages/ProductPage'
 
+import Snowmen from './Snowmen/Pages/Snowmen/Snowmen'
+// import JacksChartPage from './Jacks/Pages/ChartPage'
+// import JacksProductPage from './Jacks/Pages/ProductPage'
+
 import App from './App';
 
 ReactDOM.render(
@@ -39,6 +43,7 @@ ReactDOM.render(
           <Route path="/pumpkinjacks" component={Jacks} />
           <Route path="/cupids/chart" component={CupidsChartPage} />
           <Route path="/cupids" component={CupidsPage} />
+          <Route path="/snowmen" component={Snowmen} />
         </Switch>
       </App>
     </HashRouter>

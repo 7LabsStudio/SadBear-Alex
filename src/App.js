@@ -30,6 +30,13 @@ function App({ children }) {
       element.setAttribute('href', '/favicon.ico');
     });
   }
+  if (context === "Snowmen") {
+    document.documentElement.className = "Snowmen"
+    document.title = "Snowmen"
+    favicon.forEach(function (element) {
+      element.setAttribute('href', '/favicon.ico');
+    });
+  }
 
   return (
     <Context.Provider value={[context, setContext]}>

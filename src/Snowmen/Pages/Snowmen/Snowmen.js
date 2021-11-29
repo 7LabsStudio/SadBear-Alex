@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { Context } from "../../../Context";
-import "./CupidsPage.scss";
-import "../../Styles/socials.scss";
+import "./Snowmen.scss";
+import '../../Styles/socials.scss';
 import Rarity from '../../Components/Rarity/Rarity';
 import Roadmap from '../../Components/Roadmap/Roadmap';
 import Header from '../../Components/Header/Header';
@@ -12,7 +12,7 @@ export const Home = () => {
   const [, setContext] = useContext(Context);
 
   useEffect(() => {
-    setContext("Cupids")
+    setContext("Snowmen")
   })
 
   return (

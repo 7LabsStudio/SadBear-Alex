@@ -1,0 +1,62 @@
+@import '../../Styles/varsSnowmen.scss';
+
+.Snowmen {
+	.main-screen {
+		padding-top: 34.1rem;
+		padding-bottom: 34.1rem;
+		position: relative;
+
+		@media screen and (max-width: $large_tablet) {
+			padding: 24.1rem 0 29.5rem;
+		}
+
+		&__bg {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		&__wrap {
+			max-width: 69.7rem;
+			margin: 0 auto;
+			position: relative;
+			text-align: center;
+			z-index: 4;
+			color: #002b45;
+
+			@media screen and (max-width: $large_tablet) {
+				text-align: left;
+			}
+		}
+
+		&__title {
+			font-family: 'Dancing Script';
+			font-weight: bold;
+			font-size: 11.2rem;
+			line-height: 13.4rem;
+			color: $secondary-c;
+			margin-bottom: 4.8rem;
+
+			@media screen and (max-width: $large_tablet) {
+				font-size: 4.8rem;
+				line-height: 5.8rem;
+				margin-bottom: 2.4rem;
+			}
+		}
+
+		&__content {
+			max-width: 69rem;
+			font-size: 2rem;
+			line-height: 3.2rem;
+			width: 100%;
+
+			@media screen and (max-width: $large_tablet) {
+				font-size: 1.6rem;
+				line-height: 2.4rem;
+			}
+		}
+	}
+}

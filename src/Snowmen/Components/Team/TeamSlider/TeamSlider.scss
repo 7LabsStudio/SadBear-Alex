@@ -1,12 +1,12 @@
-@import '../../../Styles//varsCupids.scss';
+@import '../../../Styles/varsSnowmen.scss';
 
-.Cupids {
+.Snowmen {
 	.team-slider {
 		display: none;
 
 		@media screen and (max-width: $large_tablet) {
 			display: block;
-			padding: 2.4rem 3rem 4.6rem;
+			padding: 0 0rem 17.2rem;
 
 			.swiper-pagination {
 				position: absolute;
@@ -21,17 +21,17 @@
 					width: 6.4rem;
 					height: 1.2rem;
 					background: #ebdee0;
+					opacity: 1;
 					border-radius: 0.8rem;
 					margin-right: 1.9rem;
 					transition: 0.5s;
-					opacity: 1;
 
 					&:last-of-type {
 						margin-right: 0;
 					}
 
 					&-active {
-						background: #ad4656;
+						background: #0047ff;
 					}
 				}
 			}

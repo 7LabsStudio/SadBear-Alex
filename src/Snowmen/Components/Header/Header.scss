@@ -1,0 +1,138 @@
+@import '../../Styles/varsSnowmen.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.Snowmen {
+	.header {
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+		padding: 4rem 0rem 0;
+
+		&__wrap {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: relative;
+			max-width: 140rem;
+			width: 100%;
+			margin: 0 auto;
+			padding: 2.2rem 2.4rem;
+			background-color: #ffffff;
+
+			@media screen and (max-width: $large_tablet) {
+				padding: 1.2rem 1.8rem;
+			}
+		}
+
+		&__logo {
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+			color: #121212;
+			font-weight: normal;
+			display: flex;
+			align-items: center;
+
+			p {
+				margin-left: 1.2rem;
+				position: relative;
+
+				&::before {
+					position: absolute;
+					content: '';
+					top: 100%;
+					height: 1px;
+					width: 100%;
+					background-color: #121212;
+					opacity: 0;
+					transition: 0.5s;
+				}
+			}
+
+			&:hover {
+				p::before {
+					opacity: 1;
+				}
+			}
+		}
+
+		&__nav {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+
+			&-list {
+				display: flex;
+				align-items: center;
+			}
+
+			&-item {
+				margin-right: 2.4rem;
+
+				&:last-child {
+					margin-right: 0px;
+				}
+			}
+
+			&-link {
+				position: relative;
+				font-weight: 500;
+				font-size: 1.6rem;
+				line-height: 2.4rem;
+				color: #000000;
+				font-family: 'Roboto', sans-serif;
+
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0px;
+					bottom: -2px;
+					width: 100%;
+					height: 1px;
+					background: #000000;
+					transform: scaleX(0);
+					transition: transform 0.5s;
+				}
+
+				&:hover::before {
+					transform: scaleX(1);
+				}
+			}
+		}
+
+		&__socials {
+			@media screen and (max-width: $large_tablet) {
+				margin-left: auto;
+				margin-right: 2.8rem;
+			}
+		}
+
+		&__burger {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 1.6em;
+			cursor: pointer;
+
+			&:hover div {
+				&:nth-child(2) {
+					width: 100%;
+				}
+			}
+
+			div {
+				margin-bottom: 0.7rem;
+				width: 100%;
+				border-bottom: 2px solid #0047ff;
+				transition: width 0.5s, border-bottom-color 0.5s;
+
+				&:nth-child(2) {
+					width: 50%;
+				}
+
+				&:last-child {
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}

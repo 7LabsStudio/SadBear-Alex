@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from 'react';
 import { Context } from "../../../Context";
 import "./SadBear.scss";
+import "../../Styles/socials.scss";
+import "./SadBear.scss";
 import Header from "../../Components/Header/Header";
 import RaritiesArrow from "../../Images/rariries-arrow.svg";
 import ConnectArrow from "../../Images/connect-arrow.svg";

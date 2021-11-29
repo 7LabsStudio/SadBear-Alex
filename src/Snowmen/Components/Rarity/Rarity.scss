@@ -1,0 +1,94 @@
+@import '../../Styles/varsSnowmen.scss';
+
+.Snowmen {
+	.rarity {
+		padding: 15.4rem 0 9.7rem;
+		position: relative;
+		z-index: 2;
+		background-color: #ffffff;
+
+		@media screen and (max-width: $large_tablet) {
+			padding: 20rem 0 11.6rem;
+		}
+
+		&__img-snow {
+			position: absolute;
+			top: 6.9rem;
+			left: 19.7rem;
+			z-index: -1;
+			height: 83.7rem;
+			width: 103.5rem;
+			max-height: 80%;
+			max-width: 80%;
+
+			@media screen and (max-width: $large_tablet) {
+				height: 30.8rem;
+				width: 42.5rem;
+				max-height: 100%;
+				max-width: 100%;
+				top: -4.5rem;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
+		&__wrap {
+			display: flex;
+			width: 100%;
+			padding-left: 48.3rem;
+
+			@media screen and (max-width: $large_tablet) {
+				flex-direction: column;
+				align-items: center;
+				padding-left: 0;
+			}
+		}
+
+		&__left {
+			max-width: 38rem;
+			width: 100%;
+			padding-top: 15.6rem;
+
+			@media screen and (max-width: $large_tablet) {
+				padding-top: 0;
+				text-align: center;
+			}
+		}
+
+		&__right {
+			max-width: 80.7rem;
+			width: 100%;
+			margin-left: -2rem;
+
+			@media screen and (max-width: $large_tablet) {
+				max-width: 27.9rem;
+				margin-left: 0;
+			}
+
+			> div {
+				padding-bottom: 100%;
+			}
+		}
+
+		&__content {
+			font-size: 2rem;
+			line-height: 3.2rem;
+			color: #004570;
+
+			@media screen and (max-width: $large_tablet) {
+				font-size: 1.6rem;
+				line-height: 2.4rem;
+				margin-bottom: 1.6rem;
+			}
+		}
+
+		&__simple-title {
+			color: #f84644;
+			margin-bottom: 5.7rem;
+
+			@media screen and (max-width: $large_tablet) {
+				margin-bottom: 1.6rem;
+			}
+		}
+	}
+}
