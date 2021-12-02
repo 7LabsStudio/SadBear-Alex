@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.4cf7959d.chunk.css",
-    "main.js": "/static/js/main.1f23217a.chunk.js",
-    "main.js.map": "/static/js/main.1f23217a.chunk.js.map",
+    "main.css": "/static/css/main.03b60c5c.chunk.css",
+    "main.js": "/static/js/main.9aacea0f.chunk.js",
+    "main.js.map": "/static/js/main.9aacea0f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.16b44cf8.js",
     "runtime-main.js.map": "/static/js/runtime-main.16b44cf8.js.map",
     "static/css/2.57f016c4.chunk.css": "/static/css/2.57f016c4.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.cf3f8c59.chunk.js.map": "/static/js/2.cf3f8c59.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.57f016c4.chunk.css.map": "/static/css/2.57f016c4.chunk.css.map",
-    "static/css/main.4cf7959d.chunk.css.map": "/static/css/main.4cf7959d.chunk.css.map",
+    "static/css/main.03b60c5c.chunk.css.map": "/static/css/main.03b60c5c.chunk.css.map",
     "static/js/2.cf3f8c59.chunk.js.LICENSE.txt": "/static/js/2.cf3f8c59.chunk.js.LICENSE.txt",
     "static/media/Accessories_arm-bracelet_Uncommon.1ef80454.png": "/static/media/Accessories_arm-bracelet_Uncommon.1ef80454.png",
     "static/media/Accessories_egyptian-necklace_Rare.9a831e8e.png": "/static/media/Accessories_egyptian-necklace_Rare.9a831e8e.png",
@@ -563,7 +563,7 @@
     "static/js/runtime-main.16b44cf8.js",
     "static/css/2.57f016c4.chunk.css",
     "static/js/2.cf3f8c59.chunk.js",
-    "static/css/main.4cf7959d.chunk.css",
-    "static/js/main.1f23217a.chunk.js"
+    "static/css/main.03b60c5c.chunk.css",
+    "static/js/main.9aacea0f.chunk.js"
   ]
 }

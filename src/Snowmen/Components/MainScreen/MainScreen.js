@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import "./MainScreen.scss";
 import mainBg from "../../Images/main-screen-bg.png";
 import { HashLink as Link } from 'react-router-hash-link';

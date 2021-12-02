@@ -19,11 +19,13 @@ const Preloader = ({ preloaderHide, preloaderRemove }) => {
 
   return (
     <div className={preloaderShow}>
-      <div className="preloader-logo">
-        <img src={ImgSnow} alt=''></img>
-      </div>
-      <div className="preloader-line">
-        <div className="preloader-loading"></div>
+      <div className="preloader-wrap">
+        <div className="preloader-logo">
+          <img src={ImgSnow} alt=''></img>
+        </div>
+        <div className="preloader-line">
+          <div className="preloader-loading"></div>
+        </div>
       </div>
     </div>
   )

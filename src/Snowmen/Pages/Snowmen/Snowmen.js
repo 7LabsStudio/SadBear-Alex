@@ -32,7 +32,7 @@ export const Home = () => {
 
   return (
     <>
-      {/* <Preloader preloaderHide={preloaderHide} preloaderRemove={preloaderRemove} /> */}
+      <Preloader preloaderHide={preloaderHide} preloaderRemove={preloaderRemove} />
       <SmoothScrollbar>
         <Header />
         <main>
