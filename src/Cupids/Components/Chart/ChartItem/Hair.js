@@ -1,5 +1,6 @@
 import React from 'react';
-import { commonHair, uncommonHair, rareHair, mythicHair } from "../../ImagesArrays/Hair/Hair"
+import { commonHair, mythicHair } from "../../ImagesArrays/Hair/Hair"
+// import { commonHair, uncommonHair, rareHair, mythicHair } from "../../ImagesArrays/Hair/Hair"
 
 
 export const HairChart = () => (

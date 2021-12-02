@@ -1,5 +1,6 @@
 import React from 'react';
-import { commonBow, uncommonBow, rareBow, mythicBow } from "../../ImagesArrays/Bow/Bow"
+import { commonBow, uncommonBow, rareBow } from "../../ImagesArrays/Bow/Bow"
+// import { commonBow, uncommonBow, rareBow, mythicBow } from "../../ImagesArrays/Bow/Bow"
 
 
 export const BowChart = () => (

@@ -1,5 +1,6 @@
 import React from 'react';
-import { commonOutfit, uncommonOutfit, rareOutfit, mythicOutfit } from "../../ImagesArrays/Outfit/Outfit"
+import { commonOutfit, uncommonOutfit, rareOutfit } from "../../ImagesArrays/Outfit/Outfit"
+// import { commonOutfit, uncommonOutfit, rareOutfit, mythicOutfit } from "../../ImagesArrays/Outfit/Outfit"
 
 
 export const OutfitChart = () => (

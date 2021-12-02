@@ -1,5 +1,6 @@
 import React from 'react';
-import { commonArrow, uncommonArrow, rareArrow, mythicArrow } from "../../ImagesArrays/Arrow/Arrow"
+import { commonArrow, uncommonArrow, rareArrow } from "../../ImagesArrays/Arrow/Arrow"
+// import { commonArrow, uncommonArrow, rareArrow, mythicArrow } from "../../ImagesArrays/Arrow/Arrow"
 
 
 export const ArrowChart = () => (

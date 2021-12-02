@@ -1,5 +1,6 @@
 import React from 'react';
-import { commonBackground, uncommonBackground, rareBackground, mythicBackground } from "../../ImagesArrays/Background/Background"
+import { commonBackground } from "../../ImagesArrays/Background/Background"
+// import { commonBackground, uncommonBackground, rareBackground, mythicBackground } from "../../ImagesArrays/Background/Background"
 
 
 export const BackgroundChart = () => (

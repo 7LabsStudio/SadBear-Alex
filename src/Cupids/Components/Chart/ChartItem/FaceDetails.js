@@ -1,5 +1,6 @@
 import React from 'react';
-import { commonFaceDetails, uncommonFaceDetails, rareFaceDetails, mythicFaceDetails } from "../../ImagesArrays/FaceDetails/FaceDetails"
+import { rareFaceDetails, mythicFaceDetails } from "../../ImagesArrays/FaceDetails/FaceDetails"
+// import { commonFaceDetails, uncommonFaceDetails, rareFaceDetails, mythicFaceDetails } from "../../ImagesArrays/FaceDetails/FaceDetails"
 
 
 export const FaceDetailsChart = () => (

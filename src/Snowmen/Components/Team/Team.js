@@ -30,10 +30,10 @@ export const Team = () => {
   ]
 
   return (
-    <section className="team" >
-      <img src={teamBg} className="team-bg mobile--hide"></img>
-      <img src={teamBgMobile} className="team-bg desktop--hide"></img>
-      <div className="team__simple-title simple-title" id="team-ar">Team</div>
+    <section className="team" id="team-ar" >
+      <img src={teamBg} alt="" className="team-bg mobile--hide"></img>
+      <img src={teamBgMobile} alt="" className="team-bg desktop--hide"></img>
+      <div className="team__simple-title simple-title" >Team</div>
       <div className="team__list mobile--hide">
         {arrPeopleTeam.map((item, index) => [
           <TeamItem arrPeopleTeam={item} key={index}></TeamItem>

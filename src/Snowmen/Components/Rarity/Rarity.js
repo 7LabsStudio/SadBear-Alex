@@ -3,7 +3,7 @@ import "./Rarity.scss";
 import rarityRightImg from "../../Images/snowmen.png";
 import ImgSnow from "../../Images/snowflakes.svg";
 import ImgSnowMobile from "../../Images/snowflakes-mobile.svg";
-import { HashLink as Link } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger);
@@ -11,19 +11,19 @@ gsap.registerPlugin(ScrollTrigger);
 const Rarity = () => {
   const rarityRef = useRef(null);
 
-  // useEffect(() => {
-  //   const rarity = rarityRef.current
+  useEffect(() => {
+    // const rarity = rarityRef.current
 
-  //   gsap.fromTo(rarity.querySelector('.rarity__simple-title'), {
-  //     y: 0
-  //   }, {
-  //     scrollTrigger: {
-  //       trigger: rarity,
-  //       start: "top top",
-  //     },
-  //     y: 40,
-  //   })
-  // }, []);
+    // gsap.fromTo(rarity.querySelector('.rarity__simple-title'), {
+    //   y: 0
+    // }, {
+    //   scrollTrigger: {
+    //     trigger: rarity,
+    //     start: "top top",
+    //   },
+    //   y: 40,
+    // })
+  }, []);
 
   return (
     <section className="rarity" ref={rarityRef}>

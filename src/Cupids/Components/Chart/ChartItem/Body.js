@@ -1,5 +1,6 @@
 import React from 'react';
-import { commonBody, uncommonBody, rareBody, mythicBody } from "../../ImagesArrays/Body/Body"
+import { commonBody } from "../../ImagesArrays/Body/Body"
+// import { commonBody, uncommonBody, rareBody, mythicBody } from "../../ImagesArrays/Body/Body"
 
 
 export const BodyChart = () => (

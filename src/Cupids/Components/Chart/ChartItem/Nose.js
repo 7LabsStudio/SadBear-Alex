@@ -1,5 +1,6 @@
 import React from 'react';
-import { commonNose, uncommonNose, rareNose, mythicNose } from "../../ImagesArrays/Nose/Nose"
+import { commonNose } from "../../ImagesArrays/Nose/Nose"
+// import { commonNose, uncommonNose, rareNose, mythicNose } from "../../ImagesArrays/Nose/Nose"
 
 
 export const NoseChart = () => (

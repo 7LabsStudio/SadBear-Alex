@@ -8,16 +8,21 @@ import Header from '../../Components/Header/Header';
 import MainScreen from '../../Components/MainScreen/MainScreen';
 import Team from '../../Components/Team/Team';
 import SmoothScrollbar from '../../../Components/Scrollbar/Scrollbar';
+import MobileMenu from '../../Components/MobileMenu/MobileMenu';
 import Preloader from '../../Components/Preloader/Preloader'
 
 
 export const Home = () => {
   const [, setContext] = useContext(Context);
 
+
+  let [scrollbar, setScrollbar] = useState()
+
   useEffect(() => {
     setContext("Snowmen")
   })
 
+  const [menuActive, setMenuActive] = useState(false)
   const [preloaderHide, setPreloaderHide] = useState(false)
   const [preloaderRemove, setPreloaderRemove] = useState(false)
 
@@ -30,11 +35,16 @@ export const Home = () => {
     }, 4500)
   })
 
+
+
+
+
   return (
     <>
+      <MobileMenu menuActive={menuActive} scrollbarMenu={scrollbar} closeMenu={setMenuActive} />
       <Preloader preloaderHide={preloaderHide} preloaderRemove={preloaderRemove} />
-      <SmoothScrollbar>
-        <Header />
+      <SmoothScrollbar scrollbar={scrollbar} setSrollbar={setScrollbar} >
+        <Header menuActive={menuActive} closeMenu={setMenuActive} />
         <main>
           <MainScreen />
           <Rarity />
