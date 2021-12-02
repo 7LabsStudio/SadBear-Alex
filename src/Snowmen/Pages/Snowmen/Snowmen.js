@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Context } from "../../../Context";
 import "./Snowmen.scss";
 import '../../Styles/socials.scss';
@@ -7,6 +7,9 @@ import Roadmap from '../../Components/Roadmap/Roadmap';
 import Header from '../../Components/Header/Header';
 import MainScreen from '../../Components/MainScreen/MainScreen';
 import Team from '../../Components/Team/Team';
+import SmoothScrollbar from '../../../Components/Scrollbar/Scrollbar';
+import Preloader from '../../Components/Preloader/Preloader'
+
 
 export const Home = () => {
   const [, setContext] = useContext(Context);
@@ -15,15 +18,30 @@ export const Home = () => {
     setContext("Snowmen")
   })
 
+  const [preloaderHide, setPreloaderHide] = useState(false)
+  const [preloaderRemove, setPreloaderRemove] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setPreloaderHide(true)
+    }, 3500)
+    setTimeout(() => {
+      setPreloaderRemove(true)
+    }, 4500)
+  })
+
   return (
     <>
-      <Header />
-      <main>
-        <MainScreen />
-        <Rarity />
-        <Roadmap />
-        <Team />
-      </main>
+      {/* <Preloader preloaderHide={preloaderHide} preloaderRemove={preloaderRemove} /> */}
+      <SmoothScrollbar>
+        <Header />
+        <main>
+          <MainScreen />
+          <Rarity />
+          <Roadmap />
+          <Team />
+        </main>
+      </SmoothScrollbar>
     </>
   )
 }

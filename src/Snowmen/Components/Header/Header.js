@@ -1,14 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
 import "./Header.scss"
 import { HashLink as Link } from 'react-router-hash-link';
 import MobileMenu from '../MobileMenu/MobileMenu';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { OffsetYContext } from "../../../Context";
+gsap.registerPlugin(ScrollTrigger);
 
 export const Header = () => {
+
+  let OffsetY = useContext(OffsetYContext)
+  const headerRef = useRef(null);
   const [menuActive, setMenuActive] = useState(false)
+
+  useEffect(() => {
+
+    const header = headerRef.current
+
+    gsap.fromTo(header, {
+      y: 0
+    }, {
+      scrollTrigger: {
+        trigger: header,
+        start: "top top",
+        end: "top top",
+        scrub: 0,
+      },
+      y: OffsetY - 40,
+    })
+  });
 
   return (
     <>
-      <header className="header">
+      <header className="header" ref={headerRef}>
         <div className="center-wrap">
           <div className="header__wrap">
             <Link className="header__logo" smooth to="/">

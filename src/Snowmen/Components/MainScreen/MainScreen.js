@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import "./MainScreen.scss";
 import mainBg from "../../Images/main-screen-bg.png";
 import { HashLink as Link } from 'react-router-hash-link';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger);
 
 export const MainScreen = () => {
+
   return (
     <section className="main-screen" id="main-screen">
       <img className="main-screen__bg" src={mainBg} alt="" />
