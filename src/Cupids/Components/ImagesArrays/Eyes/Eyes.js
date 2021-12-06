@@ -67,7 +67,7 @@ export const uncommonEyes = [
   {
     name: "Winking-brown",
     img: WinkingBrown,
-    number: ""
+    number: "4.78"
   },
   {
     name: "Winking-green",

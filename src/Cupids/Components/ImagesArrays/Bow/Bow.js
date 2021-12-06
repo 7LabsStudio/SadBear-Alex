@@ -50,7 +50,7 @@ export const uncommonBow = [
   {
     name: "Gold-&-fire",
     img: Goldfire,
-    number: ""
+    number: "7.66"
   },
   {
     name: "Ice",

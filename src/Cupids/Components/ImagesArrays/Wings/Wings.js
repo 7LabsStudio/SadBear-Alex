@@ -56,7 +56,7 @@ export const uncommonWings = [
   {
     name: "Fire-2",
     img: Fire2,
-    number: ""
+    number: "6.0"
   },
   {
     name: "Ice",

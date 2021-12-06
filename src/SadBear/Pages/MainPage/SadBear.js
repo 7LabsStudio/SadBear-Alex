@@ -33,8 +33,6 @@ export default function SadBear() {
             <p className="main-screen__title">SAD BEARS</p>
             <p className="main-screen__description">Shorting Solana since $3.</p>
             <p className="main-screen__content">
-              Sad Bear holders will be airdropped four free generative art collections. See Road Map for details.
-              <br /><br />
               It all started with a group of investment bears who found success
               in 2020 hoarding and selling toilet paper during the start of the pandemic.
               The group is also famous for shorting tiger petting zoos during the Tiger King hype.
@@ -54,7 +52,6 @@ export default function SadBear() {
           </div>
           <div className="main-screen__text">
             <p className="main-screen__content">
-              After all 5,000 Sad Bears are purchased, 12 weeks of exclusive airdrops will begin. Once a week for 12 weeks, Sad Bear NFT holders will have the chance to receive exclusive airdrops, including four complete generative art collections! That's FOUR complete collections. See Road Map for more details. Every Sad Bear you hold in your wallet increases your chance of winning an item. A higher rarity Sad Bear increases your chance of receiving an airdropped item.
             </p>
           </div>
         </div>
@@ -62,7 +59,7 @@ export default function SadBear() {
 
       <section className="road-map">
         <div id="road-map" className="road-map__wrap">
-          <p className="road-map__left-text">Minting iN late November</p>
+          <p className="road-map__left-text">Minting in January</p>
           <div className="road-map__text">
             <p className="road-map__title">ROAD MAP</p>
             {/* <p className="road-map__content">
@@ -78,36 +75,74 @@ export default function SadBear() {
             </p> */}
             <div className="road-map__list">
               <div className="road-map__item content">
-                <h3>Q4 2021</h3>
-                <p>
-                  Sad Bears public mint. Sale date and details TBD.
-                  <br></br>
-                  <br></br>
-                  Once a week for 12 weeks, Sad Bear holders will have the chance to receive exclusive and rare rewards airdropped to their wallets. We will airdrop four complete generative NFT collections! That's right, four. Each airdropped collection will be composed of 5000 beautiful generative NFTs. Below is the two collections. Three more collections will be announced soon!
+                <h3>Phase 1</h3>
+                <p> Pre-Mint
                 </p>
                 <ul>
-                  <li> <Link smooth to="/pumpkinjacks"> Pumpkin Jacks </Link> generative NFT collection.</li>
-                  <li> <Link smooth to="/cupids"> Love Cupids </Link> generative NFT collection.</li>
+                  <li>
+                    2022 Sad Bears will launch on the Solana Blockchain
+                  </li>
+                  <li>
+                    Mint Price: 1 SOL
+                  </li>
+                  <li>
+                    Mint Date: Jan 2022
+                  </li>
+                  <li>
+                    AMAs: Discussion chats with the founding team
+                  </li>
                 </ul>
               </div>
               <div className="road-map__item content">
-                <h3>Q1 2022</h3>
-                <p>
-                  5% of primary gross proceeds will be donated to <a href="https://vitalground.org/">Vital Ground</a> bear conservation to protect bears and their natural habitats.
-                  <br></br>
-                  <br></br>
-                  3D sad bear airdrop to Sad Bear NFT holders. Limited number available for public mint to the extra sad Sad Bears.
-                  <br></br>
-                  <br></br>
-                  Begin creating DAO for Sad Bears.
-                </p>
+                <h3>Phase 2</h3>
+                <p>After-Mint</p>
+                <ul>
+                  <li>
+                    Launch on the Secondary Market
+                  </li>
+                  <li>
+                    Community DAO: Set up a community wallet containing 20% of sales revenue on mint and royalties which will then be used for various community driven features.
+                  </li>
+                  <li>
+                    <a href="https://doko.one/" rel="noreferrer" target='_blank'> Doko-Multi-Chain NFT Portfolio Manager</a> Integration to display your nfts and rarity in one place or any rarity tool.
+                  </li>
+                  <li>
+                    Integrate with Grape protocol for the verified SB holders
+                  </li>
+                </ul>
               </div>
               <div className="road-map__item content">
-                <h3>Q4 2022</h3>
-                <p>
-                  One year after Sad Bear launch, all holders who have held their Bear for the entire year will be rewarded with a surprise airdrop.
-                  <br></br>
-                </p>
+                <h3>Phase 3</h3>
+                <ul>
+                  <li>
+                    Intro Sad Bear “Honey” Mechanism: You need to have honey, so please save a Sad Bear!
+                    <ul>
+                      <li>
+                        X amount of honey will allow the holder to exchange for our SB Merchandise.
+                      </li>
+                      <li>
+                        Each SB Holder can receive 5 Drops of Honey per day per SB NFT.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Intro of “Bear Den”: NT Buy-back Mechanism, buy-back a percent of the Sad Bear supply every quarter and drop to DAO wallet for giveaway to existing SB Holders.
+                  </li>
+                  <li>
+                    Introduction of the Sad Cub (Breeding Mechanism) - Gen 2 Sad Bear NFT:
+                    6,000 Sad Cub NFT will be available for mint with 2 x Sad Bear NFT + 888 drops of honey.(Each Sad Bear can breed twice max)
+                  </li>
+                  <li>
+                    Special Auction Monthly for NFTs and bidding with Honey.
+                  </li>
+                </ul>
+              </div>
+              <div className="road-map__item content">
+                <h3>Phase 4</h3>
+                <ul>
+                  <li> Sad Bear Metaverse or Game: TBD  based on the DAO community votes. Each SB NFT is entitled to 1 Vote Count.</li>
+                  <li> Estimated launch mint date of 1st or 2nd week of Jan 2022, TBD. </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -137,7 +172,7 @@ export default function SadBear() {
       <section id="rarities" className="rarities">
         <p className="rarities__title">RARITIES</p>
         <div className="rarities__container">
-          <p className="rarities__text content">Rarity <Link smooth to="/chart"> chart </Link>  coming soon.
+          <p className="rarities__text content">Scroll through our rarity <Link smooth to="/chart"> chart! </Link>
           </p>
           <img src={RaritiesArrow} alt={"long-arrow"} className="rarities__arrow" />
         </div>
@@ -197,7 +232,7 @@ export default function SadBear() {
           <p className="faq__question">Q: What are Sad Bears? </p>
           <div className="faq__answer-content">
             <p className="faq__answer">
-              A: Sad Bears are a collection of 5,000 algorithmically generated Bears that exist on the Solana blockchain.
+              A: Sad Bears are a collection of 2,022 algorithmically generated Bears that exist on the Solana blockchain.
             </p>
           </div>
           <p className="faq__question">Q: How can I buy a Sad Bear? </p>
@@ -235,7 +270,7 @@ export default function SadBear() {
           </p>
           <div className="faq__answer-content">
             <p className="faq__answer">
-              A: We are launching in November. Stay tuned for the exact date. The
+              A: We are launching in January. Stay tuned for the exact date. The
               price will be 1 SOL per bear.
             </p>
           </div>

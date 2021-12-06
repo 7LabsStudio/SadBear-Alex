@@ -15,8 +15,6 @@ export const Team = () => {
       img: teamImg1,
       title: "Jefe Lover",
       position: "Boss",
-      info: [["Body:", "Black-skin-2 16.28%"], ["Hat:", "Gold-greek-crown 8.56% "], ['Eyes:', 'Winking-black 4.92%'],
-      ['Wings:', 'Narrow Nostrils 1.9%'], ['Shoes:', 'Greek-slippers 9.42%']],
     },
     {
       img: teamImg2,
@@ -24,15 +22,11 @@ export const Team = () => {
       position: 'Artist, see ',
       linkHref: "https://www.instagram.com/huannita_art/",
       linkText: "portfolio",
-      info: [["Body:", "Black-skin-2 16.28%"], ["Hat:", "Gold-greek-crown 8.56% "], ['Eyes:', 'Winking-black 4.92%'],
-      ['Wings:', 'Narrow Nostrils 1.9%'], ['Shoes:', 'Greek-slippers 9.42%']],
     },
     {
       img: teamImg3,
       title: "Blue Lover",
       position: "CTO",
-      info: [["Body:", "Black-skin-2 16.28%"], ["Hat:", "Gold-greek-crown 8.56% "], ['Eyes:', 'Winking-black 4.92%'],
-      ['Wings:', 'Narrow Nostrils 1.9%'], ['Shoes:', 'Greek-slippers 9.42%']],
     }
   ]
 

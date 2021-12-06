@@ -195,7 +195,6 @@
 			padding-top: 2.3rem;
 			padding-bottom: 7.3rem;
 			margin-bottom: 0.8rem;
-			text-align: justify;
 
 			@media screen and (max-width: $large_tablet) {
 				padding-left: 0rem;
@@ -273,10 +272,13 @@
 
 			p {
 				font-size: 3.6rem;
-				text-align: justify;
 				line-height: 4rem;
 				letter-spacing: -1.3px;
-				margin-bottom: 6.6rem;
+				margin-bottom: 3rem;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
 
 				@media screen and (max-width: $large_tablet) {
 					font-size: 1.8rem;

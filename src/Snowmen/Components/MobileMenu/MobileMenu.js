@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./MobileMenu.scss"
 import CloseIcon from "../../Images/mobile-close.svg";
 import { HashLink as Link } from 'react-router-hash-link';

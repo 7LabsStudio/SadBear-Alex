@@ -19,7 +19,6 @@ export const TeamSlider = ({ children }) => {
     <Swiper className="team-slider"
       pagination={pagination}
       spaceBetween={100}
-    // autoHeight={true}
     >
       {children.map((item, index) => [
         <SwiperSlide key={index}>{item}</SwiperSlide>

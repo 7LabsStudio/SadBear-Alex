@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Scrollbar from 'smooth-scrollbar';
 import "./Scrollbar.scss";
@@ -7,12 +7,6 @@ import { SmoothScrollbarContext } from "../../Context";
 gsap.registerPlugin(ScrollTrigger);
 
 const SmoothScrollbar = (props) => {
-
-
-
-
-
-
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -20,7 +14,7 @@ const SmoothScrollbar = (props) => {
       delegateTo: document.querySelector('body'),
       damping: 0.05
     }))
-  }, [])
+  })
 
   useEffect(() => {
     if (props.scrollbar) {
@@ -40,9 +34,6 @@ const SmoothScrollbar = (props) => {
       })
     }
   })
-
-
-
 
   return (
     <SmoothScrollbarContext.Provider value={props.scrollbar} >
