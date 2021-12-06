@@ -12,7 +12,7 @@ export const commonHat = [
 
 export const uncommonHat = [
   {
-    name: "gold-greek-crown",
+    name: "Gold-greek-crown",
     img: GoldGreekCrown,
     number: "8.56"
   },

@@ -27,7 +27,7 @@ export const commonOutfit = [
     number: "15.6"
   },
   {
-    name: "TraditionalGreen",
+    name: "Traditional-green",
     img: TraditionalGreen,
     number: "16.62"
   },

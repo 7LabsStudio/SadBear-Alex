@@ -83,12 +83,12 @@ export const rareHair = [
 ]
 export const mythicHair = [
   {
-    name: "pink-short",
+    name: "Pink-short",
     img: PinkShort,
     number: "0.76"
   },
   {
-    name: "white-elegant",
+    name: "White-elegant",
     img: WhiteElegant,
     number: "0.78"
   },

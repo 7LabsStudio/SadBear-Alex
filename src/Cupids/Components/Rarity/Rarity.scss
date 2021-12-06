@@ -2,12 +2,12 @@
 
 .Cupids {
 	.rarity {
-		padding: 32.4rem 0 67.9rem 37.8rem;
+		padding: 32.4rem 0 48.8rem 37.8rem;
 		position: relative;
 		z-index: 3;
 
 		@media screen and (max-width: $large_desktop) {
-			padding: 32.4rem 0 67.9rem 20rem;
+			padding: 32.4rem 0 48.8rem 20rem;
 		}
 
 		@media screen and (max-width: $large_tablet) {
@@ -18,7 +18,7 @@
 		&::before {
 			content: '';
 			position: absolute;
-			height: 100%;
+			height: calc(100% - 5.2rem);
 			width: 100%;
 			top: 5.2rem;
 			left: 0;
@@ -29,6 +29,7 @@
 			z-index: -1;
 
 			@media screen and (max-width: $large_tablet) {
+				height: 100%;
 				top: 0;
 				background-position-y: 35%;
 				background-image: url('../../Images/rarity-mobile-bg.png');

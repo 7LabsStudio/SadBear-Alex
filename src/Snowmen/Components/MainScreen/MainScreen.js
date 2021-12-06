@@ -18,7 +18,7 @@ export const MainScreen = () => {
             <p>
               The Festive Snowmen are 5000 algorithmically generated NFTs, and are part of the <Link to="/"> Sad Bear 12-week giveaway.</Link> We want to get cheerful for the holidays, so we are airdropping these snowmen to Sad Bear holders.
               <br></br>
-              The more Sad Bears and the more rare your Sad Bear, the higher the chance of receiving a Love Cupid.
+              The more Sad Bears and the more rare your Sad Bear, the higher the chance of receiving a Festive Snowman.
             </p>
           </div>
         </div>
