@@ -31,7 +31,7 @@ export default function SadBear() {
         <div className="main-screen__wrap">
           <div className="main-screen__text">
             <p className="main-screen__title">SAD BEARS</p>
-            <p className="main-screen__description">Shorting Solana since $3.</p>
+            <p className="main-screen__description">Shorted Solana at $3.</p>
             <p className="main-screen__content">
               It all started with a group of investment bears who found success
               in 2020 hoarding and selling toilet paper during the start of the pandemic.
