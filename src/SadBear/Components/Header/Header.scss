@@ -1,67 +1,184 @@
 @import '../../Styles/vars.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 .SadBear {
 	.header {
-		padding: 7.5rem 0 0;
-		background: transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
 
-		@media screen and (max-width: $large_tablet) {
-			padding: 4rem 2rem 0;
+		.header-anim {
+			padding: 4rem 0 0;
+			opacity: 0;
+			animation: header-opacity 1s;
+			animation-fill-mode: forwards !important;
 		}
 
-		&__container {
-			position: relative;
-		}
-
-		&__logo-image {
-			max-width: 7.6rem;
-			max-height: 7.6rem;
-			mix-blend-mode: lighten;
-			position: absolute;
-			left: 15rem;
-			top: 50%;
-			transform: translateY(-50%);
-			object-fit: contain;
-			object-position: top;
-
-			@media screen and (max-width: $large_tablet) {
-				left: -2rem;
+		&--fixed {
+			.header-anim {
+				padding: 2rem 0;
+				opacity: 1;
+				background: #ffffff;
+				box-shadow: 0px 4px 50px #e1e0e0;
+				transform: translate(0, -100%);
+				animation: header-height 0.5s !important;
+				animation-fill-mode: forwards !important;
 			}
 		}
 
-		.category-wrapper {
+		&--height0 {
+			.header-anim {
+				transform: translate(0, 0);
+				animation: header-height0 0.5s !important;
+			}
+		}
+
+		@keyframes header-height {
+			100% {
+				transform: translate(0, 0);
+			}
+		}
+
+		@keyframes header-height0 {
+			100% {
+				transform: translate(0, -100%);
+			}
+		}
+
+		@keyframes header-opacity {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+
+		&__wrap {
 			display: flex;
-			height: 100%;
 			align-items: center;
-			justify-content: center;
+			justify-content: space-between;
+			position: relative;
 
 			@media screen and (max-width: $large_tablet) {
-				display: none;
-			}
-
-			.category {
-				font-size: 1.6rem;
-				color: #fff;
-				padding: 0 2.4rem;
-				margin-bottom: 0;
-				text-transform: uppercase;
-				cursor: pointer;
 			}
 		}
 
-		.hamburger {
-			display: none;
-			cursor: pointer;
-			max-width: 4.5rem;
-			width: 100%;
-			max-height: 4.5rem;
-			height: 100%;
-			object-fit: contain;
-			object-position: top;
+		&__logo {
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+			color: #121212;
+			font-weight: normal;
+			display: flex;
+			align-items: center;
 
+			p {
+				font-family: 'Graphik';
+				margin-left: 1.2rem;
+				position: relative;
+				font-size: 2.4rem;
+				line-height: 2.6rem;
+
+				span {
+					font-weight: 900;
+					color: #121212;
+					margin-right: 0.4rem;
+				}
+
+				&::before {
+					position: absolute;
+					content: '';
+					top: 100%;
+					height: 1px;
+					width: 100%;
+					background-color: #121212;
+					opacity: 0;
+					transition: 0.5s;
+				}
+			}
+
+			&:hover {
+				p::before {
+					opacity: 1;
+				}
+			}
+		}
+
+		&__nav {
+			&-list {
+				display: flex;
+				align-items: center;
+			}
+
+			&-item {
+				margin-right: 2.4rem;
+
+				&:last-child {
+					margin-right: 0px;
+				}
+			}
+
+			&-link {
+				position: relative;
+				font-weight: 500;
+				font-size: 1.6rem;
+				line-height: 2.4rem;
+				color: #000000;
+				font-family: 'Laila', sans-serif;
+
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0px;
+					bottom: -2px;
+					width: 100%;
+					height: 1px;
+					background: #000000;
+					transform: scaleX(0);
+					transition: transform 0.5s;
+				}
+
+				&:hover::before {
+					transform: scaleX(1);
+				}
+			}
+		}
+
+		&__socials {
 			@media screen and (max-width: $large_tablet) {
-				display: block;
 				margin-left: auto;
+				margin-right: 2.8rem;
+			}
+		}
+
+		&__burger {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 1.6em;
+			cursor: pointer;
+
+			&:hover div {
+				&:nth-child(2) {
+					width: 100%;
+				}
+			}
+
+			div {
+				margin-bottom: 0.7rem;
+				width: 100%;
+				border-bottom: 2px solid #ad4656;
+				transition: width 0.5s, border-bottom-color 0.5s;
+
+				&:nth-child(2) {
+					width: 50%;
+				}
+
+				&:last-child {
+					margin-bottom: 0px;
+				}
 			}
 		}
 	}

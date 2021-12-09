@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Context } from "./Context";
+import { Context, Anchors } from "./Context";
 
 
 function App({ children }) {
   const [context, setContext] = useState("SadBear");
+  const [anchors, setAnchors] = useState(null);
 
   let favicon = document.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"]');
 
@@ -40,7 +41,9 @@ function App({ children }) {
 
   return (
     <Context.Provider value={[context, setContext]}>
-      <div>{children}</div>
+      <Anchors.Provider value={[anchors, setAnchors]}>
+        <div>{children}</div>
+      </Anchors.Provider>
     </Context.Provider>
   );
 }

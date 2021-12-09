@@ -1,0 +1,80 @@
+@import '../../Styles/vars.scss';
+
+.SadBear {
+	.connect {
+		width: 100%;
+		padding-top: 7.6rem;
+		background-image: url('../../Images/connect-bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&__img {
+			max-width: 69.2rem;
+			width: 100%;
+			margin-left: -3rem;
+		}
+
+		&__wrap {
+			display: flex;
+			align-items: center;
+			position: relative;
+			width: 100%;
+
+			.connect__title {
+				text-align: left;
+				line-height: 9.6rem;
+				color: #000000;
+			}
+		}
+
+		&__title {
+			margin-bottom: 5.2rem;
+			max-width: 61.3rem;
+			width: 100%;
+
+			// @media screen and (max-width: $large_tablet) {
+			// 	font-size: 5rem;
+			// 	line-height: 100%;
+			// 	margin-bottom: 5rem;
+			// }
+		}
+
+		&__links {
+			display: flex;
+
+			a {
+				background: #184066;
+				border-radius: 4.3rem;
+				display: flex;
+				align-items: center;
+				padding: 1.2rem 2.6rem;
+				margin-right: 2rem;
+				opacity: 0.85;
+				cursor: pointer;
+				transition: 0.5s;
+
+				img {
+					width: 5.6rem;
+					height: 5.6rem;
+				}
+
+				&:hover {
+					opacity: 0.75;
+				}
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+
+				p {
+					font-family: 'Laila', sans-serif;
+					font-weight: bold;
+					font-size: 2.4rem;
+					line-height: 3.6rem;
+					color: #ffffff;
+					margin-left: 1.6rem;
+				}
+			}
+		}
+	}
+}

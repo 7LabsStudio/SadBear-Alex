@@ -1,0 +1,115 @@
+@import '../../Styles/vars.scss';
+
+.team {
+	position: relative;
+	padding: 19rem 0 37.7rem;
+
+	@media screen and (max-width: $large_tablet) {
+		padding: 0 2rem 8rem;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+
+		&-white {
+			width: 100%;
+			position: absolute;
+			bottom: -10rem;
+			z-index: 1;
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		margin-bottom: 9.6rem;
+
+		@media screen and (max-width: $large_tablet) {
+			font-size: 5rem;
+			line-height: 100%;
+			margin-bottom: 6rem;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		// @media screen and (max-width: $large_tablet) {
+		// 	padding: 8rem 3rem 4rem;
+		// }
+	}
+
+	&__member {
+		margin-bottom: 2.4rem;
+		width: calc((100% - 2rem) / 2);
+		padding: 4.8rem 3.7rem 4.8rem 6rem;
+		background: rgba(255, 255, 255, 0.4);
+		border-radius: 2.4rem;
+
+		@media screen and (max-width: $large_tablet) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
+		&-wrap {
+			display: flex;
+			align-items: center;
+			margin-bottom: 2.4rem;
+		}
+
+		&-img {
+			margin-right: 4rem;
+			object-fit: contain;
+			width: 100%;
+			max-width: 16.4rem;
+
+			@media screen and (max-width: $large_tablet) {
+				margin-right: 0rem;
+				margin-bottom: 5rem;
+			}
+		}
+
+		&-name {
+			font-family: 'Laila', sans-serif;
+			font-size: 4.8rem;
+			line-height: 7.2rem;
+			color: #1d4449;
+			margin-bottom: 1.2rem;
+			font-weight: bold;
+
+			// @media screen and (max-width: $large_tablet) {
+			// 	font-size: 3.5rem;
+			// 	list-style: 100%;
+			// }
+		}
+
+		&-role {
+			font-family: 'Laila', sans-serif;
+			font-size: 4rem;
+			line-height: 4.8rem;
+			color: #3eac94;
+			font-weight: bold;
+
+			// @media screen and (max-width: $large_tablet) {
+			// 	font-size: 3.5rem;
+			// 	list-style: 100%;
+			// }
+		}
+
+		&-description {
+			font-size: 2.4rem;
+			line-height: 3.6rem;
+			color: #121212;
+
+			// @media screen and (max-width: $large_tablet) {
+			// 	font-size: 2.3rem;
+			// 	list-style: 100%;
+			// }
+		}
+	}
+}

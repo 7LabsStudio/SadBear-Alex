@@ -1,0 +1,86 @@
+@import '../../Styles/vars.scss';
+
+.SadBear {
+	.main-screen {
+		position: relative;
+		width: 100%;
+		background-image: url('../../Images/main-screen-bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+		z-index: -1;
+
+		&__wrap {
+			padding: 0rem 2rem 0rem 12rem;
+			min-height: 102rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&__title {
+			font-family: 'Laila', sans-serif;
+			font-weight: bold;
+			font-size: 9.6rem;
+			line-height: 12.8rem;
+			letter-spacing: 1px;
+			color: #1d4449;
+
+			@media screen and (max-width: $large_tablet) {
+				font-size: 6rem;
+			}
+		}
+
+		&__description {
+			font-family: 'Laila', sans-serif;
+			color: #1d4449;
+			font-size: 4rem;
+			line-height: 6.4rem;
+
+			@media screen and (max-width: $large_tablet) {
+				font-size: 3.5rem;
+			}
+		}
+
+		&__image {
+			max-width: 67.1rem;
+			width: 100%;
+			margin-top: auto;
+
+			& > div {
+				padding-bottom: 116.54%;
+			}
+
+			// @media screen and (max-width: $large_tablet) {
+			// 	background-position-x: center;
+			// 	height: 33rem;
+			// 	margin-top: 0;
+			// }
+		}
+
+		&__bottom {
+			padding: 16.6rem 0 7rem;
+			z-index: 2;
+			position: relative;
+
+			&-text {
+				display: flex;
+				justify-content: space-between;
+				padding-left: 12rem;
+
+				p {
+					max-width: 57rem;
+					width: 100%;
+					font-size: 2.4rem;
+					line-height: 3.6rem;
+					margin-bottom: 3.6rem;
+					color: #121212;
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
