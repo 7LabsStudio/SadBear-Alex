@@ -9,30 +9,30 @@ export const Faq = () => {
 
   const faqRef = useRef(null);
 
-  // useEffect(() => {
-  //   const faqRefCurrent = faqRef.current;
-  //   faqRefCurrent.querySelectorAll(".faq__question-title").forEach(title => {
-  //     const titleParent = title.parentElement
-  //     const question = title.parentElement.querySelector(".faq__answer-content")
-  //     title.addEventListener('click', () => {
-  //       const titleParentActive = titleParent.classList.contains("faq__question--active")
-  //       if (titleParentActive) {
-  //         title.parentElement.classList.remove("faq__question--active")
-  //         question.style.maxHeight = '0';
-  //       } else {
+  useEffect(() => {
+    const faqRefCurrent = faqRef.current;
+    faqRefCurrent.querySelectorAll(".faq__question-title").forEach(title => {
+      const titleParent = title.parentElement
+      const question = title.parentElement.querySelector(".faq__answer-content")
+      title.addEventListener('click', () => {
+        const titleParentActive = titleParent.classList.contains("faq__question--active")
+        if (titleParentActive) {
+          title.parentElement.classList.remove("faq__question--active")
+          question.style.maxHeight = '0';
+        } else {
 
-  //         faqRefCurrent.querySelectorAll(".faq__question").forEach(item => {
-  //           if (item.classList.contains("faq__question--active")) {
-  //             item.classList.remove("faq__question--active")
-  //             item.querySelector(".faq__answer-content").style.maxHeight = '0';
-  //           }
-  //         })
-  //         title.parentElement.classList.add("faq__question--active")
-  //         question.style.maxHeight = question.scrollHeight + "px";
-  //       }
-  //     })
-  //   })
-  // }, [])
+          faqRefCurrent.querySelectorAll(".faq__question").forEach(item => {
+            if (item.classList.contains("faq__question--active")) {
+              item.classList.remove("faq__question--active")
+              item.querySelector(".faq__answer-content").style.maxHeight = '0';
+            }
+          })
+          title.parentElement.classList.add("faq__question--active")
+          question.style.maxHeight = question.scrollHeight + "px";
+        }
+      })
+    })
+  }, [])
 
 
   // useEffect(() => {
