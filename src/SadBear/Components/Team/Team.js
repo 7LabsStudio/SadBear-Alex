@@ -14,46 +14,46 @@ export const Team = () => {
 
   const teamRef = useRef(null);
 
-  useEffect(() => {
-    teamRef.current.querySelectorAll(".team__member").forEach((item, index) => {
-      if (index % 2) {
-        gsap.fromTo(item, {
-          y: 150,
-        }, {
-          scrollTrigger: {
-            trigger: item,
-            start: "top bottom",
-            end: "bottom bottom",
-            scrub: 0,
-          },
-          y: 0,
-        })
-      } else {
-        gsap.fromTo(item, {
-          y: 75,
-        }, {
-          scrollTrigger: {
-            trigger: item,
-            start: "top bottom",
-            end: "bottom bottom",
-            scrub: 0,
-          },
-          y: 0,
-        })
-      }
-      gsap.fromTo(item, {
-        opacity: 0,
-      }, {
-        scrollTrigger: {
-          trigger: item,
-          start: "top bottom",
-          end: "bottom bottom",
-          scrub: 0,
-        },
-        opacity: 1,
-      })
-    });
-  })
+  // useEffect(() => {
+  //   teamRef.current.querySelectorAll(".team__member").forEach((item, index) => {
+  //     if (index % 2) {
+  //       gsap.fromTo(item, {
+  //         y: 150,
+  //       }, {
+  //         scrollTrigger: {
+  //           trigger: item,
+  //           start: "top bottom",
+  //           end: "bottom bottom",
+  //           scrub: 3,
+  //         },
+  //         y: 0,
+  //       })
+  //     } else {
+  //       gsap.fromTo(item, {
+  //         y: 75,
+  //       }, {
+  //         scrollTrigger: {
+  //           trigger: item,
+  //           start: "top bottom",
+  //           end: "bottom bottom",
+  //           scrub: 3,
+  //         },
+  //         y: 0,
+  //       })
+  //     }
+  //     gsap.fromTo(item, {
+  //       opacity: 0,
+  //     }, {
+  //       scrollTrigger: {
+  //         trigger: item,
+  //         start: "top bottom",
+  //         end: "bottom bottom",
+  //         scrub: 3,
+  //       },
+  //       opacity: 1,
+  //     })
+  //   });
+  // })
 
 
   return (

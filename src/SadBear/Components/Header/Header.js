@@ -7,20 +7,20 @@ import { SmoothScrollbarContext, Anchors } from "../../../Context";
 gsap.registerPlugin(ScrollTrigger);
 
 export const Header = ({ menuActive, closeMenu }) => {
-  let [scrollbarOffsetY, setScrollbarOffsetY] = useState(0)
+  // let [scrollbarOffsetY, setScrollbarOffsetY] = useState(0)
   let scrollbar = useContext(SmoothScrollbarContext)
   let [anchors, setAnchors] = useContext(Anchors)
 
   const headerRef = useRef(null);
 
 
-  useEffect(() => {
-    if (scrollbar) {
-      scrollbar.addListener(status => {
-        setScrollbarOffsetY(status.offset.y)
-      })
-    }
-  })
+  // useEffect(() => {
+  //   if (scrollbar) {
+  //     scrollbar.addListener(status => {
+  //       setScrollbarOffsetY(status.offset.y)
+  //     })
+  //   }
+  // })
 
   useEffect(() => {
     if (scrollbar) {
@@ -29,47 +29,47 @@ export const Header = ({ menuActive, closeMenu }) => {
     }
   })
 
-  useEffect(() => {
-    const header = headerRef.current
+  // useEffect(() => {
+  //   const header = headerRef.current
 
-    const headerFix = () => {
-      header.classList.add('header--fixed');
-      function headerAddFixed() {
-        header.classList.add('header--fixed');
-        header.removeEventListener('animationend', headerAddFixed)
-      }
-      header.addEventListener('animationend', headerAddFixed)
-    }
+  //   const headerFix = () => {
+  //     header.classList.add('header--fixed');
+  //     function headerAddFixed() {
+  //       header.classList.add('header--fixed');
+  //       header.removeEventListener('animationend', headerAddFixed)
+  //     }
+  //     header.addEventListener('animationend', headerAddFixed)
+  //   }
 
-    const headerStatic = () => {
-      header.classList.add('header--height0');
-      function headerRemoveFixed() {
-        header.classList.remove('header--fixed');
-        header.classList.remove('header--height0');
-        header.removeEventListener('animationend', headerRemoveFixed)
-      }
+  //   const headerStatic = () => {
+  //     header.classList.add('header--height0');
+  //     function headerRemoveFixed() {
+  //       header.classList.remove('header--fixed');
+  //       header.classList.remove('header--height0');
+  //       header.removeEventListener('animationend', headerRemoveFixed)
+  //     }
 
-      header.addEventListener('animationend', headerRemoveFixed)
-    }
+  //     header.addEventListener('animationend', headerRemoveFixed)
+  //   }
 
-    gsap.fromTo(header, {
-      y: 0
-    }, {
-      scrollTrigger: {
-        trigger: header,
-        start: "1 top",
-        end: "1 top",
-        scrub: 0,
-        onEnter: () => {
-          headerFix()
-        },
-        onLeaveBack: () => {
-          headerStatic()
-        }
-      },
-      y: scrollbarOffsetY,
-    })
-  });
+  //   gsap.fromTo(header, {
+  //     y: 0
+  //   }, {
+  //     scrollTrigger: {
+  //       trigger: header,
+  //       start: "1 top",
+  //       end: "1 top",
+  //       scrub: 0,
+  //       onEnter: () => {
+  //         headerFix()
+  //       },
+  //       onLeaveBack: () => {
+  //         headerStatic()
+  //       }
+  //     },
+  //     y: scrollbarOffsetY,
+  //   })
+  // });
 
   return (
     <header className="header" ref={headerRef}>

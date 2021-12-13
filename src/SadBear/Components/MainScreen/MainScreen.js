@@ -10,35 +10,39 @@ export const MainScreen = () => {
   const mainScreenRef = useRef(null);
   const mainScreenBottomRef = useRef(null);
 
-  useEffect(() => {
-    const mainScreen = mainScreenRef.current
-    gsap.fromTo(mainScreen.querySelector(".main-screen__text"), {
-      opacity: 0,
-      y: 100,
-    }, {
-      y: 0,
-      opacity: 1,
-      delay: 4,
-      duration: 1
-    })
-  }, [mainScreenRef])
+  // useEffect(() => {
+  //   const mainScreen = mainScreenRef.current
+  //   gsap.fromTo(mainScreen.querySelector(".main-screen__text"), {
+  //     opacity: 0,
+  //     y: 100,
+  //   }, {
+  //     y: 0,
+  //     opacity: 1,
+  //     delay: 4,
+  //     duration: 1
+  //   })
+  // }, [mainScreenRef])
 
-  useEffect(() => {
-    const mainScreenBottom = mainScreenBottomRef.current
-    gsap.fromTo(mainScreenBottom, {
-      opacity: 0,
-      y: 100,
-    }, {
-      scrollTrigger: {
-        trigger: mainScreenBottom,
-        start: "top bottom",
-        end: "50% bottom",
-        scrub: 1,
-      },
-      y: 0,
-      opacity: 1,
-    })
-  })
+  // useEffect(() => {
+  //   const mainScreenBottom = mainScreenBottomRef.current
+
+  //   gsap.fromTo(mainScreenBottom.children, {
+  //     opacity: 0,
+  //     y: 100,
+  //   }, {
+  //     scrollTrigger: {
+  //       trigger: mainScreenBottom,
+  //       start: "top bottom",
+  //       end: "bottom bottom",
+  //       scrub: 3,
+  //     },
+  //     stagger: {
+  //       amount: 0.5
+  //     },
+  //     y: 0,
+  //     opacity: 1,
+  //   })
+  // })
 
   return (
     <>

@@ -9,44 +9,44 @@ gsap.registerPlugin(ScrollTrigger);
 export const RoadMap = () => {
   const roadMapRef = useRef(null);
 
-  useEffect(() => {
-    const roadMap = roadMapRef.current
+  // useEffect(() => {
+  //   const roadMap = roadMapRef.current
 
-    const roadMapItem = roadMap.querySelectorAll(".road-map__item")
+  //   const roadMapItem = roadMap.querySelectorAll(".road-map__item")
 
-    gsap.fromTo(roadMapItem, {
-      opacity: 0,
-      y: 100,
-    }, {
-      scrollTrigger: {
-        trigger: roadMap.querySelector(".road-map__list"),
-        start: "top bottom",
-        end: "top 30%",
-        scrub: 3,
-      },
-      y: 0,
-      stagger: {
-        amount: 1
-      },
-      opacity: 1,
-    })
+  //   gsap.fromTo(roadMapItem, {
+  //     opacity: 0,
+  //     y: 100,
+  //   }, {
+  //     scrollTrigger: {
+  //       trigger: roadMap.querySelector(".road-map__list"),
+  //       start: "top bottom",
+  //       end: "top 20%",
+  //       scrub: 3,
+  //     },
+  //     y: 0,
+  //     stagger: {
+  //       amount: 0.5
+  //     },
+  //     opacity: 1,
+  //   })
 
-    gsap.fromTo(roadMap.querySelector(".road-map__text-bottom"), {
-      opacity: 0,
-      y: 50,
-      scale: 0.9,
-    }, {
-      scrollTrigger: {
-        trigger: roadMap.querySelector(".road-map__text-bottom"),
-        start: "top bottom",
-        end: "bottom bottom",
-        scrub: 1,
-      },
-      y: 0,
-      scale: 1,
-      opacity: 1,
-    })
-  })
+  //   gsap.fromTo(roadMap.querySelector(".road-map__text-bottom"), {
+  //     opacity: 0,
+  //     y: 50,
+  //     scale: 0.9,
+  //   }, {
+  //     scrollTrigger: {
+  //       trigger: roadMap.querySelector(".road-map__text-bottom"),
+  //       start: "top bottom",
+  //       end: "bottom bottom",
+  //       scrub: 1,
+  //     },
+  //     y: 0,
+  //     scale: 1,
+  //     opacity: 1,
+  //   })
+  // })
 
   return (
     <section className="road-map" ref={roadMapRef}>

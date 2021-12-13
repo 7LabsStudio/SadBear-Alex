@@ -28,39 +28,39 @@ export default function SadBear() {
   const [preloaderHide, setPreloaderHide] = useState(false)
   const [preloaderRemove, setPreloaderRemove] = useState(false)
 
-  useEffect(() => {
-    setTimeout(() => {
-      setPreloaderHide(true)
-    }, 3500)
-    setTimeout(() => {
-      setPreloaderRemove(true)
-    }, 4500)
-  })
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setPreloaderHide(true)
+  //   }, 3500)
+  //   setTimeout(() => {
+  //     setPreloaderRemove(true)
+  //   }, 4500)
+  // })
 
   const mainRef = useRef(null);
 
-  useEffect(() => {
-    mainRef.current.querySelectorAll(".anim-title").forEach(element => {
-      gsap.fromTo(element, {
-        opacity: 0,
-        scale: 0.9,
-      }, {
-        scrollTrigger: {
-          trigger: element,
-          start: "top bottom",
-          toggleActions: "play none none reset"
-        },
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-        delay: 0.25
-      })
-    })
-  });
+  // useEffect(() => {
+  //   mainRef.current.querySelectorAll(".anim-title").forEach(element => {
+  //     gsap.fromTo(element, {
+  //       opacity: 0,
+  //       scale: 0.9,
+  //     }, {
+  //       scrollTrigger: {
+  //         trigger: element,
+  //         start: "top bottom",
+  //         toggleActions: "play none none reset"
+  //       },
+  //       opacity: 1,
+  //       scale: 1,
+  //       duration: 1,
+  //       delay: 0.25
+  //     })
+  //   })
+  // });
 
   return (
     <>
-      <Preloader preloaderHide={preloaderHide} preloaderRemove={preloaderRemove} />
+      {/* <Preloader preloaderHide={preloaderHide} preloaderRemove={preloaderRemove} /> */}
       <SmoothScrollbar scrollbar={scrollbar} setSrollbar={setScrollbar} >
         <Header />
         <main className="sad-bear" ref={mainRef}>

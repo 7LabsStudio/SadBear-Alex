@@ -10,23 +10,23 @@ gsap.registerPlugin(ScrollTrigger);
 export const Connect = () => {
   const connectRef = useRef(null);
 
-  useEffect(() => {
-    const connect = connectRef.current
+  // useEffect(() => {
+  //   const connect = connectRef.current
 
-    gsap.fromTo(connect.querySelector(".connect__wrap"), {
-      opacity: 0,
-      scale: 0.7,
-    }, {
-      scrollTrigger: {
-        trigger: connect.querySelector(".connect__wrap"),
-        start: "top bottom",
-        end: "bottom bottom",
-        scrub: 1,
-      },
-      opacity: 1,
-      scale: 1,
-    })
-  })
+  //   gsap.fromTo(connect.querySelector(".connect__wrap"), {
+  //     opacity: 0,
+  //     scale: 0.7,
+  //   }, {
+  //     scrollTrigger: {
+  //       trigger: connect.querySelector(".connect__wrap"),
+  //       start: "top bottom",
+  //       end: "bottom bottom",
+  //       scrub: 1,
+  //     },
+  //     opacity: 1,
+  //     scale: 1,
+  //   })
+  // })
 
   return (
     <section className="connect" id="connect" ref={connectRef}>
