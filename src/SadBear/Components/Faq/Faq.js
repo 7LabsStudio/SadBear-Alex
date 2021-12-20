@@ -78,6 +78,7 @@ export const Faq = () => {
           <div className="faq__question">
             <p className="faq__question-title">What are the steps required to purchase a Sad Bear? </p>
             <div className="faq__answer-content">
+              <p className="faq__answer"></p>
               <ul>
                 <li>
                   Download a Solana Wallet (Phantom, Solflare or Sollet)
@@ -95,17 +96,6 @@ export const Faq = () => {
                   Once you click Mint, approve the transaction and you are now one of us - a Sad Bear. Your Sad Bear NFT will appear in your Solana wallet.
                 </li>
               </ul>
-            </div>
-          </div>
-          <div className="faq__question">
-            <p className="faq__question-title">
-              When is the &nbsp;launch? How much will it cost?{" "}
-            </p>
-            <div className="faq__answer-content">
-              <p className="faq__answer">
-                We are launching in January. Stay tuned for the exact date. The
-                price will be 1 SOL per bear.
-              </p>
             </div>
           </div>
           <div className="faq__question">

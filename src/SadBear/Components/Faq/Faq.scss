@@ -87,7 +87,7 @@
 
 			&--active {
 				.faq__question-title::before {
-					transform: rotate(90deg) translateY(-50%);
+					transform: rotate(90deg) translateX(-50%);
 				}
 			}
 		}
