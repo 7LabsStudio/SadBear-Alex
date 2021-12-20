@@ -54,7 +54,7 @@ export const RoadMap = () => {
         <div id="roadmap" className="road-map__wrap">
           <p className="road-map__minting anim-title">Minting in January</p>
           <div className="road-map__text">
-            <p className="road-map__title simple-title anim-title">ROAD MAP</p>
+            <p className="road-map__title simple-title anim-title">BEAR PATH</p>
             <img className="road-map__img" src={RoadMapImg} alt=""></img>
             <p className="road-map__text-bottom">ARE YOU BEAR ENOUGH TO BE A SAD BEAR HOLDER?</p>
             <div className="road-map__list">
@@ -87,7 +87,7 @@ export const RoadMap = () => {
                     Listing in Secondary Market
                   </li>
                   <li>
-                    Community DAOt: Set up a community wallet containing 20% of sales revenue on mint and royalties which be used for various community driven features with this project.
+                    Sad Bears DAO: Set up a community wallet containing 20% of sales revenue on mint and royalties which be used for various community driven features with this project.
                   </li>
                   <li>
                     <a href="https://doko.one/" rel="noreferrer" target='_blank'>Display your NFTs and Rarity with Rarity Tool/Site.</a>

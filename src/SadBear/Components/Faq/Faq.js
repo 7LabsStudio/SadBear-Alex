@@ -39,6 +39,7 @@ export const Faq = () => {
   //   faqRef.current.querySelectorAll(".faq__question").forEach(item => {
   //     gsap.fromTo(item, {
   //       x: 100,
+  //       opacity: 0
   //     }, {
   //       scrollTrigger: {
   //         trigger: item,
@@ -46,6 +47,7 @@ export const Faq = () => {
   //         end: "200% bottom",
   //         scrub: 1,
   //       },
+  //       opacity: 1,
   //       x: 0
   //     })
   //   });
