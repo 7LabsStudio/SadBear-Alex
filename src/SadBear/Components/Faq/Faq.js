@@ -60,39 +60,39 @@ export const Faq = () => {
         <div className="faq__wrap">
           <h2 className="faq__title simple-title anim-title">FAQ</h2>
           <div className="faq__question">
-            <p className="faq__question-title">What are Sad Bears? </p>
+            <p className="faq__question-title">What are Sad Bears?</p>
             <div className="faq__answer-content">
               <p className="faq__answer">
-                Sad Bears are a collection of 2,022 algorithmically generated Bears that exist on the Solana blockchain.
+                Sad Bears are a collection of 2022 algorithmically generated Bears that exist on the Solana blockchain.
               </p>
             </div>
           </div>
           <div className="faq__question">
-            <p className="faq__question-title">How can I buy a Sad Bear? </p>
+            <p className="faq__question-title">How can I buy a Sad Bear?</p>
             <div className="faq__answer-content">
               <p className="faq__answer">
-                Minting happens on this site. When the bears go &nbsp;live,
-                connect your Solana wallet and then click Mint. Congrats, you are
-                now a Sad Bear. Specific steps are as follows:
+                You can purchase a Sad Bear here. When the bears go live - connect your Solana wallet and then click 'Mint'. Congratulations! You are now a Sad Bear!
               </p>
+            </div>
+          </div>
+          <div className="faq__question">
+            <p className="faq__question-title">What are the steps required to purchase a Sad Bear? </p>
+            <div className="faq__answer-content">
               <ul>
                 <li>
-                  Download a Solana Wallet (Phantom, Solflare, or Sollet).
+                  Download a Solana Wallet (Phantom, Solflare or Sollet)
                 </li>
                 <li>
-                  Deposit SOL to your wallet. SOL can be purchased on an
-                  exchange such as Coinbase or FTX. You’ll then transfer your
-                  SOL from your exchange account to your Solana Wallet.
+                  Deposit SOL into your wallet, SOL can be purchased on an exchange such as Coinbase or FTX. You'll then transfer your SOL from your exchange account to your Solana Wallet.
                 </li>
                 <li>
-                  At the time of &nbsp;launch, connect your wallet to the Sad
-                  Bears website. Once the sale is &nbsp;live, you’ll be able to
-                  click the Mint button.
+                  At the time of launch, connect your wallet to the Sad Bears website.
                 </li>
                 <li>
-                  Once you click Mint, approve the transaction and you are now
-                  one of us - a Sad Bear. Your Sad Bear NFT will appear in your
-                  Solana wallet.
+                  Once the sale is live, you’ll be able to click the Mint button.
+                </li>
+                <li>
+                  Once you click Mint, approve the transaction and you are now one of us - a Sad Bear. Your Sad Bear NFT will appear in your Solana wallet.
                 </li>
               </ul>
             </div>
@@ -109,53 +109,57 @@ export const Faq = () => {
             </div>
           </div>
           <div className="faq__question">
-            <p className="faq__question-title">Is there a buy &nbsp;limit? </p>
+            <p className="faq__question-title">When is the Launch? How much will it cost?</p>
             <div className="faq__answer-content">
               <p className="faq__answer">
-                You can purchase one Sad Bear per transaction, but you can make
-                as many transactions as you would like, while supplies &nbsp;last.{" "}
+                We are launching in Early January 2022. Stay tuned for the exact date. The price will be 1 SOL per bear
               </p>
             </div>
           </div>
           <div className="faq__question">
             <p className="faq__question-title">
-              How many traits do the Sad Bears have, and what are their
-              rarities?{" "}
+              Is there a buy limit?
             </p>
             <div className="faq__answer-content">
               <p className="faq__answer">
-                The bears have approximately 180 total traits divided among 8
-                categories, which can generate over 23 billion unique Sad Bears.
-                Please see the Rarities section above.
+                You can purchase Maxed of 3 Sad Bear per Wallet for Whitelist Sales. We will inform you again if we have public sales.
               </p>
             </div>
           </div>
           <div className="faq__question">
-            <p className="faq__question-title">What wallets can I use? </p>
+            <p className="faq__question-title">How many traits do the Sad Bears have and what are their rarities?</p>
             <div className="faq__answer-content">
               <p className="faq__answer">
-                We support Phantom, Solflare, and Sollet wallets.
+                The bears have approximately 180 total traits divided among 8 categories, which can generate over 23 billion unique Sad Bears.
               </p>
             </div>
           </div>
           <div className="faq__question">
-            <p className="faq__question-title">Will there be a secondary market? </p>
+            <p className="faq__question-title">What wallets can I use?</p>
             <div className="faq__answer-content">
-              <p className="faq__answer"> Yes. In progress.</p>
+              <p className="faq__answer"> We support Phantom, Solflare, and Sollet wallets.</p>
             </div>
           </div>
           <div className="faq__question">
-            <p className="faq__question-title">Are there secondary sale royalties?</p>
+            <p className="faq__question-title">Will there be a secondary market?</p>
             <div className="faq__answer-content">
-              <p className="faq__answer"> Yes, royalties are set at 5%.</p>
+              <p className="faq__answer"> Yes. In progress.
+              </p>
             </div>
           </div>
           <div className="faq__question">
-            <p className="faq__question-title">What if I have additional question-titles? </p>
+            <p className="faq__question-title">Are there secondary sale royalties? </p>
             <div className="faq__answer-content">
               <p className="faq__answer">
-                Reach out to us on our Discord server or view the FAQ channel
-                on our Discord.
+                Yes, royalties are set at 5%.
+              </p>
+            </div>
+          </div>
+          <div className="faq__question">
+            <p className="faq__question-title">How does royalty work? </p>
+            <div className="faq__answer-content">
+              <p className="faq__answer">
+                Royalty is the fee pay to Sad Bears when you list and successfully sold off in the secondary market. Here is an eg; You listed Sad Bears in SolSea Marketplace for 2 Solana, when someone buy it from you, there will be 2.5% deducted by the marketplace for transaction fee and 5% deducted to pay royalty to Sad Bears, so the amount you will be getting back from the sales will be 1.85 Solana (92.5%)
               </p>
             </div>
           </div>
