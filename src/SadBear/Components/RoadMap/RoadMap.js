@@ -102,6 +102,9 @@ export const RoadMap = () => {
                 <div className="h4-none"></div>
                 <ul>
                   <li>
+                    Donating 5% of ALL PRIMARY PROCEEDS to Vital Ground Bear Conversation to protect bears in their natural habitat Bear face
+                  </li>
+                  <li>
                     Intro Sad Bear “Honey Drop” Mechanism: *You need to have Honey to please a Sad Bear! *
                   </li>
                   <li>
