@@ -10,12 +10,24 @@
 		background-position: top center;
 		z-index: -1;
 
+		@media screen and (max-width: $large_tablet) {
+			background-position: 80% -15rem;
+		}
+
 		&__wrap {
 			padding: 0rem 2rem 0rem 12rem;
 			min-height: 102rem;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+
+			@media screen and (max-width: $large_tablet) {
+				min-height: auto;
+				padding: 19.8rem 0 7.7rem;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+			}
 		}
 
 		&__title {
@@ -27,7 +39,8 @@
 			color: #1d4449;
 
 			@media screen and (max-width: $large_tablet) {
-				font-size: 6rem;
+				font-size: 6.4rem;
+				line-height: 9.6rem;
 			}
 		}
 
@@ -38,7 +51,8 @@
 			line-height: 6.4rem;
 
 			@media screen and (max-width: $large_tablet) {
-				font-size: 3.5rem;
+				font-size: 2.4rem;
+				line-height: 3.6rem;
 			}
 		}
 
@@ -47,6 +61,10 @@
 			width: 100%;
 			margin-top: auto;
 			position: relative;
+
+			@media screen and (max-width: $large_tablet) {
+				margin-top: 8rem;
+			}
 
 			&::before {
 				content: '';
@@ -66,26 +84,33 @@
 			& > div {
 				padding-bottom: 116.54%;
 			}
-
-			// @media screen and (max-width: $large_tablet) {
-			// 	background-position-x: center;
-			// 	height: 33rem;
-			// 	margin-top: 0;
-			// }
 		}
 
 		&__bottom {
-			padding: 16.6rem 0 7rem;
+			padding: 0rem 0 7rem;
 			z-index: 2;
 			position: relative;
+
+			@media screen and (max-width: $large_tablet) {
+				padding: 0;
+			}
 
 			&-text {
 				display: flex;
 				justify-content: space-between;
 				padding-left: 12rem;
 
+				@media screen and (max-width: $large_tablet) {
+					flex-direction: column;
+					padding-left: 0;
+				}
+
 				& > div {
 					width: 50%;
+
+					@media screen and (max-width: $large_tablet) {
+						width: 100%;
+					}
 				}
 
 				p {
@@ -97,6 +122,12 @@
 					margin-bottom: 3.6rem;
 					color: #121212;
 					white-space: pre-wrap;
+
+					@media screen and (max-width: $large_tablet) {
+						font-size: 1.6rem;
+						line-height: 2.4rem;
+						margin-bottom: 2.4rem;
+					}
 
 					.line {
 						display: block;

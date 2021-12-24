@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.6bc589ea.chunk.css",
-    "main.js": "/static/js/main.7d4d2a6f.chunk.js",
-    "main.js.map": "/static/js/main.7d4d2a6f.chunk.js.map",
+    "main.css": "/static/css/main.32ea766b.chunk.css",
+    "main.js": "/static/js/main.e11d3210.chunk.js",
+    "main.js.map": "/static/js/main.e11d3210.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.16b44cf8.js",
     "runtime-main.js.map": "/static/js/runtime-main.16b44cf8.js.map",
     "static/css/2.57f016c4.chunk.css": "/static/css/2.57f016c4.chunk.css",
-    "static/js/2.396927cd.chunk.js": "/static/js/2.396927cd.chunk.js",
-    "static/js/2.396927cd.chunk.js.map": "/static/js/2.396927cd.chunk.js.map",
+    "static/js/2.18264fcf.chunk.js": "/static/js/2.18264fcf.chunk.js",
+    "static/js/2.18264fcf.chunk.js.map": "/static/js/2.18264fcf.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.57f016c4.chunk.css.map": "/static/css/2.57f016c4.chunk.css.map",
-    "static/css/main.6bc589ea.chunk.css.map": "/static/css/main.6bc589ea.chunk.css.map",
-    "static/js/2.396927cd.chunk.js.LICENSE.txt": "/static/js/2.396927cd.chunk.js.LICENSE.txt",
+    "static/css/main.32ea766b.chunk.css.map": "/static/css/main.32ea766b.chunk.css.map",
+    "static/js/2.18264fcf.chunk.js.LICENSE.txt": "/static/js/2.18264fcf.chunk.js.LICENSE.txt",
     "static/media/Accessories_arm-bracelet_Uncommon.1ef80454.png": "/static/media/Accessories_arm-bracelet_Uncommon.1ef80454.png",
     "static/media/Accessories_egyptian-necklace_Rare.9a831e8e.png": "/static/media/Accessories_egyptian-necklace_Rare.9a831e8e.png",
     "static/media/Accessories_heart-on-fire-tattoo_Uncommon.63fb8add.png": "/static/media/Accessories_heart-on-fire-tattoo_Uncommon.63fb8add.png",
@@ -523,6 +523,7 @@
     "static/media/blue-bear.606a06ee.png": "/static/media/blue-bear.606a06ee.png",
     "static/media/Connect.scss": "/static/media/connect-bg.4bfcd632.png",
     "static/media/discord.b0918fc9.svg": "/static/media/discord.b0918fc9.svg",
+    "static/media/faq-bg-mobile.27036033.png": "/static/media/faq-bg-mobile.27036033.png",
     "static/media/faq-bg.1f7729b4.png": "/static/media/faq-bg.1f7729b4.png",
     "static/media/Faq.scss": "/static/media/faq-title-arrow.c4208931.svg",
     "static/media/SadBear.scss": "/static/media/fog-bg.73fd6e31.png",
@@ -536,6 +537,7 @@
     "static/media/main-screen.440b3b10.png": "/static/media/main-screen.440b3b10.png",
     "static/media/MobileMenu.scss": "/static/media/mobile-bg.4db64131.png",
     "static/media/mobile-close.1382f18c.svg": "/static/media/mobile-close.1382f18c.svg",
+    "static/media/mobile-close.4f0373b4.svg": "/static/media/mobile-close.4f0373b4.svg",
     "static/media/nugget-bear.2470d1e4.png": "/static/media/nugget-bear.2470d1e4.png",
     "static/media/picasso-bear.d4ddc567.png": "/static/media/picasso-bear.d4ddc567.png",
     "static/media/ProductPage.scss": "/static/media/product-bg.1094aa89.png",
@@ -544,6 +546,7 @@
     "static/media/rarity-mobile.09db4d3b.png": "/static/media/rarity-mobile.09db4d3b.png",
     "static/media/rarity.9806c294.png": "/static/media/rarity.9806c294.png",
     "static/media/road-map-img.9bd8d27e.svg": "/static/media/road-map-img.9bd8d27e.svg",
+    "static/media/RoadMap.scss": "/static/media/road-map__item.aae7f78b.svg",
     "static/media/roadmap-img.318ed17c.png": "/static/media/roadmap-img.318ed17c.png",
     "static/media/snowflakes-mobile.38666699.svg": "/static/media/snowflakes-mobile.38666699.svg",
     "static/media/snowflakes.ebb9fbf8.svg": "/static/media/snowflakes.ebb9fbf8.svg",
@@ -565,8 +568,8 @@
   "entrypoints": [
     "static/js/runtime-main.16b44cf8.js",
     "static/css/2.57f016c4.chunk.css",
-    "static/js/2.396927cd.chunk.js",
-    "static/css/main.6bc589ea.chunk.css",
-    "static/js/main.7d4d2a6f.chunk.js"
+    "static/js/2.18264fcf.chunk.js",
+    "static/css/main.32ea766b.chunk.css",
+    "static/js/main.e11d3210.chunk.js"
   ]
 }

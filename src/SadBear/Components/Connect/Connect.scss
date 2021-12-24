@@ -8,10 +8,20 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 
+		@media screen and (max-width: $large_tablet) {
+			padding-top: 9.6rem;
+		}
+
 		&__img {
 			max-width: 69.2rem;
 			width: 100%;
 			margin-left: -3rem;
+		}
+
+		&__info {
+			@media screen and (max-width: $large_tablet) {
+				margin-bottom: 3.4rem;
+			}
 		}
 
 		&__wrap {
@@ -20,10 +30,20 @@
 			position: relative;
 			width: 100%;
 
+			@media screen and (max-width: $large_tablet) {
+				flex-direction: column-reverse;
+			}
+
 			.connect__title {
 				text-align: left;
 				line-height: 9.6rem;
 				color: #000000;
+
+				@media screen and (max-width: $large_tablet) {
+					font-size: 4rem;
+					line-height: 7.2rem;
+					text-align: center;
+				}
 			}
 		}
 
@@ -32,15 +52,18 @@
 			max-width: 61.3rem;
 			width: 100%;
 
-			// @media screen and (max-width: $large_tablet) {
-			// 	font-size: 5rem;
-			// 	line-height: 100%;
-			// 	margin-bottom: 5rem;
-			// }
+			@media screen and (max-width: $large_tablet) {
+				margin-bottom: 2.4rem;
+				max-width: 33.3rem;
+			}
 		}
 
 		&__links {
 			display: flex;
+
+			@media screen and (max-width: $large_tablet) {
+				flex-direction: column;
+			}
 
 			a {
 				background: #184066;
@@ -52,6 +75,15 @@
 				opacity: 0.85;
 				cursor: pointer;
 				transition: 0.5s;
+
+				@media screen and (max-width: $large_tablet) {
+					margin-bottom: 2.4rem;
+					margin-right: 0;
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
 
 				img {
 					width: 5.6rem;

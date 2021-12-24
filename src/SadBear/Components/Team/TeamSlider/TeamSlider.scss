@@ -1,0 +1,40 @@
+@import '../../../Styles/vars.scss';
+
+.SadBear {
+	.team-slider {
+		display: none;
+
+		@media screen and (max-width: $large_tablet) {
+			display: block;
+			padding: 0 2.4rem 0;
+
+			.swiper-pagination {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.swiper-pagination-bullet {
+					width: 6.4rem;
+					height: 1.2rem;
+					background: #ebdee0;
+					border-radius: 0.8rem;
+					margin-right: 1.9rem;
+					transition: 0.5s;
+					opacity: 1;
+
+					&:last-of-type {
+						margin-right: 0;
+					}
+
+					&-active {
+						background: #337466;
+					}
+				}
+			}
+		}
+	}
+}

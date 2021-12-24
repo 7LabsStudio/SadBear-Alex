@@ -12,6 +12,7 @@ import Preloader from '../../Components/Preloader/Preloader'
 import SmoothScrollbar from '../../../Components/Scrollbar/Scrollbar';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import MobileMenu from '../../Components/MobileMenu/MobileMenu';
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -25,6 +26,7 @@ export default function SadBear() {
     setContext("SadBear")
   })
 
+  const [menuActive, setMenuActive] = useState(false)
   const [preloaderHide, setPreloaderHide] = useState(false)
   const [preloaderRemove, setPreloaderRemove] = useState(false)
 
@@ -61,8 +63,9 @@ export default function SadBear() {
   return (
     <>
       {/* <Preloader preloaderHide={preloaderHide} preloaderRemove={preloaderRemove} /> */}
+      <MobileMenu menuActive={menuActive} scrollbarMenu={scrollbar} closeMenu={setMenuActive} />
       <SmoothScrollbar scrollbar={scrollbar} setSrollbar={setScrollbar} >
-        <Header />
+        <Header menuActive={menuActive} closeMenu={setMenuActive} />
         <main className="sad-bear" ref={mainRef}>
           <div className="fog-bg">
             <MainScreen />

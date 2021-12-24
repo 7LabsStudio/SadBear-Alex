@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import "./Faq.scss"
 import FaqBg from "../../Images/faq-bg.png";
+import FaqBgMobile from "../../Images/faq-bg-mobile.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger);
@@ -55,7 +56,8 @@ export const Faq = () => {
 
   return (
     <section id="faq" className="faq" ref={faqRef}>
-      <img className="faq__bg" src={FaqBg} alt="" ></img>
+      <img className="faq__bg mobile--hide" src={FaqBg} alt="" ></img>
+      <img className="faq__bg desktop--hide" src={FaqBgMobile} alt="" ></img>
       <div className="center-wrap">
         <div className="faq__wrap">
           <h2 className="faq__title simple-title anim-title">FAQ</h2>
