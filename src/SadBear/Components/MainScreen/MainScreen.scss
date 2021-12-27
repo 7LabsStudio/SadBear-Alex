@@ -113,6 +113,12 @@
 					}
 				}
 
+				& > div:first-of-type {
+					@media screen and (max-width: $large_tablet) {
+						margin-bottom: 2.4rem;
+					}
+				}
+
 				p {
 					display: block;
 					max-width: 57rem;

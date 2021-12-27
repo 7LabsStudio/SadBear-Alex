@@ -89,6 +89,11 @@
 				position: absolute;
 				background-size: contain;
 				background-repeat: no-repeat;
+				display: none;
+
+				@media screen and (max-width: $large_tablet) {
+					display: block;
+				}
 			}
 
 			&::before {
