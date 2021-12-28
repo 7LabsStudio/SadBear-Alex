@@ -10,6 +10,7 @@ import Nugget from "../../Images/nugget-bear.png";
 import Jefe from "../../Images/jefe-bear.png";
 import Picasso from "../../Images/picasso-bear.png";
 import Blue from "../../Images/blue-bear.png";
+import IvannCCT from "../../Images/IvannCCT.png";
 import TeamBg from "../../Images/team-bg.png";
 import TeamBgWhite from "../../Images/team-bg-white.png";
 
@@ -63,7 +64,7 @@ export const Team = () => {
   const arrPeopleTeam = [
     {
       img: Jefe,
-      title: "Jefe Bear",
+      title: "Sauce",
       position: "CEO",
       description: "Took a long position on commercial real estate in 2020. Not sure what went wrong. Somehow got promoted to boss bear and is in charge of leading all things Sad Bears related."
     },
@@ -84,6 +85,12 @@ export const Team = () => {
       title: "Nugget Bear",
       position: "Marketing",
       description: "Owned a business selling farm-raised salmon labeled as wild caught. Got arrested at the US/Mexico border trying to flee the country. Turning over a new leaf in marketing and community management."
+    },
+    {
+      img: IvannCCT,
+      title: "IvannCCT",
+      position: "Community Manager ",
+      description: "Started hoarding hand sanitizer during the pandemic, noticed it had alcohol, and tried drinking it. Hallucinated some cool ideas in the hospital. Now is responsible for discord growth."
     }
   ]
 

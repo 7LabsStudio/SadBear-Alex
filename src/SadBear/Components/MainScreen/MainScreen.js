@@ -92,7 +92,7 @@ export const MainScreen = () => {
           <div className="main-screen__wrap">
             <div className="main-screen__text">
               <h1 className="main-screen__title">Sad Bears</h1>
-              <p className="main-screen__description">Shorting Solana since $3.</p>
+              <p className="main-screen__description">Shorted Solana at $3.</p>
             </div>
             <div className="main-screen__image img-wrap">
               <div>

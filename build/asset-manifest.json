@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.86f16dce.chunk.css",
-    "main.js": "/static/js/main.e11d3210.chunk.js",
-    "main.js.map": "/static/js/main.e11d3210.chunk.js.map",
+    "main.js": "/static/js/main.2604206e.chunk.js",
+    "main.js.map": "/static/js/main.2604206e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.16b44cf8.js",
     "runtime-main.js.map": "/static/js/runtime-main.16b44cf8.js.map",
     "static/css/2.57f016c4.chunk.css": "/static/css/2.57f016c4.chunk.css",
@@ -359,6 +359,7 @@
     "static/media/Hat_leaf_Uncommon.0eaa8316.png": "/static/media/Hat_leaf_Uncommon.0eaa8316.png",
     "static/media/Hat_native_Uncommon.fa945aba.png": "/static/media/Hat_native_Uncommon.fa945aba.png",
     "static/media/Hat_turban_Uncommon.d8443ae5.png": "/static/media/Hat_turban_Uncommon.d8443ae5.png",
+    "static/media/IvannCCT.1ac55f10.png": "/static/media/IvannCCT.1ac55f10.png",
     "static/media/Mouth_Acid Smile.d68830ce.png": "/static/media/Mouth_Acid Smile.d68830ce.png",
     "static/media/Mouth_Angry.c8130813.png": "/static/media/Mouth_Angry.c8130813.png",
     "static/media/Mouth_Bankrupt Squiggle_Common.818a1e78.png": "/static/media/Mouth_Bankrupt Squiggle_Common.818a1e78.png",
@@ -570,6 +571,6 @@
     "static/css/2.57f016c4.chunk.css",
     "static/js/2.18264fcf.chunk.js",
     "static/css/main.86f16dce.chunk.css",
-    "static/js/main.e11d3210.chunk.js"
+    "static/js/main.2604206e.chunk.js"
   ]
 }
