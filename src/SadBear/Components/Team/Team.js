@@ -64,7 +64,7 @@ export const Team = () => {
   const arrPeopleTeam = [
     {
       img: Jefe,
-      title: "Sauce",
+      title: "Jefe Bear",
       position: "CEO",
       description: "Took a long position on commercial real estate in 2020. Not sure what went wrong. Somehow got promoted to boss bear and is in charge of leading all things Sad Bears related."
     },
@@ -82,7 +82,7 @@ export const Team = () => {
     },
     {
       img: Nugget,
-      title: "Nugget Bear",
+      title: "Sauce",
       position: "Marketing",
       description: "Owned a business selling farm-raised salmon labeled as wild caught. Got arrested at the US/Mexico border trying to flee the country. Turning over a new leaf in marketing and community management."
     },

@@ -62,7 +62,7 @@ export const RoadMap = () => {
               <div className="road-map__item">
                 <div className="content">
                   <h3>Phase 1</h3>
-                  <h4> Pre-Mint</h4>
+                  <h4>Pre-Mint 0 % SOLD</h4>
                   <ul>
                     <li>
                       Sad Bear Algorithmically Generated NFT in Exclusive 2022 quality on Solana Chain
@@ -85,7 +85,7 @@ export const RoadMap = () => {
               <div className="road-map__item">
                 <div className="content">
                   <h3>Phase 2</h3>
-                  <h4>After-Mint</h4>
+                  <h4>After-Mint 50 % SOLD</h4>
                   <ul>
                     <li>
                       Listing in Secondary Market
@@ -105,7 +105,7 @@ export const RoadMap = () => {
               <div className="road-map__item">
                 <div className="content">
                   <h3>Phase 3</h3>
-                  <div className="h4-none"></div>
+                  <h4>75 % SOLD</h4>
                   <ul>
                     <li>
                       Donating 5% of ALL PRIMARY PROCEEDS to Vital Ground Bear Conversation to protect bears in their natural habitat Bear face
@@ -123,9 +123,7 @@ export const RoadMap = () => {
                       Intro of “Bear Den”: SB Buy-back Mechanism, buy-back a percent of the Sad Bear supply every quarter and drop to DAO wallet for giveaway to existing SB Holders.
                     </li>
                     <li>
-                      Introduce of Sad Cub (Breeding Mechanism) - Gen 2 Sad Bear NFT:
-                    </li>
-                    <li>
+                      Introduce of Sad Cub (Breeding Mechanism) - Gen 2 Sad Bear NFT: <br></br> <br></br>
                       4044 Sad Cub NFT will be available for mint with 2 x Sad Bear NFT + 888 drops of honey. (Each Sad Bear can breed twice max)
                     </li>
                     <li>
@@ -137,7 +135,7 @@ export const RoadMap = () => {
               <div className="road-map__item">
                 <div className="content">
                   <h3>Phase 4</h3>
-                  <div className="h4-none"></div>
+                  <h4>100 % SOLD</h4>
                   <ul>
                     <li>
                       Sad Bear Metaverse or Game which we will be deciding based on the DAO community votes.
