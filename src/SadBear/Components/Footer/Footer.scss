@@ -1,0 +1,15 @@
+@import '../../Styles/vars.scss';
+
+.footer {
+	padding: 2rem 0;
+	color: black;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 3rem;
+
+	@media screen and (max-width: $large_tablet) {
+		padding: 1.5rem 0;
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+	}
+}

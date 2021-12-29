@@ -8,6 +8,7 @@ import RoadMap from '../../Components/RoadMap/RoadMap'
 import Connect from '../../Components/Connect/Connect'
 import Team from '../../Components/Team/Team'
 import Faq from '../../Components/Faq/Faq'
+import Footer from '../../Components/Footer/Footer'
 import Preloader from '../../Components/Preloader/Preloader'
 import SmoothScrollbar from '../../../Components/Scrollbar/Scrollbar';
 import { gsap } from "gsap";
@@ -75,6 +76,7 @@ export default function SadBear() {
           <Team />
           <Faq />
         </main>
+        <Footer></Footer>
       </SmoothScrollbar>
     </>
   );

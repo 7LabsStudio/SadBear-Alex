@@ -78,7 +78,7 @@ export const Header = ({ menuActive, closeMenu }) => {
           <div className="center-wrap">
             <div className="header__wrap">
               <Link className="header__logo" smooth scroll={el => { scrollbar.scrollIntoView(el) }} to="/">
-                <p><span>7L</span>Jacks</p>
+                <p><span>7L</span></p>
               </Link>
               <nav className="header__nav mobile--hide">
                 <ul className="header__nav-list">
